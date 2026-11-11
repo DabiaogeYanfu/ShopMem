@@ -3,7 +3,7 @@ import csv, json, re, statistics, sys
 from pathlib import Path
 out = Path(sys.argv[1]); out.mkdir(parents=True, exist_ok=True)
 rows = []
-for name, run in (('ShopMem-Writer (SFT, 4B)', 'eff_writer_sft_ep3'), ('ShopMem v1 (8B prompt)', 'eff_shopmem_v1')):
+for name, run in (('ShopMem-Writer (4B)', 'eff_writer_sft_ep3'), ('ShopMem-Prompt (8B)', 'eff_shopmem_v1')):
     h = json.loads(open(f'runs/{run}/histories.jsonl').readline())
     u = json.load(open(f'runs/{run}/usage.json'))
     P = [json.loads(l) for l in open(f'runs/{run}/predictions.jsonl')]

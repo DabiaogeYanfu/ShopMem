@@ -1,7 +1,7 @@
 method,run,judge_acc,judge_acc_answerable,f1_answerable,context_tokens,memory_entries,reference,ref_only,method_only,mcnemar_p
 ShopMem (Writer + Reader),v2test90_K30_grpo_stab1_final,90.9,90.3,35.1,2092,874,v2test90_K30_grpo_stab1_final,0,0,1
-"ShopMem-Writer (SFT), one-shot",v2test90_K30_writer_sft_ep3_req,53.3,51.1,41.7,1017,874,v2test90_K30_grpo_stab1_final,1362,45,<1e-300
-ShopMem v1,v2test90_K30_shopmem_v1,46.7,43.5,41.9,1171,1385,v2test90_K30_grpo_stab1_final,1615,64,<1e-300
+Writer + single retrieval,v2test90_K30_writer_sft_ep3_req,53.3,51.1,41.7,1017,874,v2test90_K30_grpo_stab1_final,1362,45,<1e-300
+ShopMem-Prompt,v2test90_K30_shopmem_v1,46.7,43.5,41.9,1171,1385,v2test90_K30_grpo_stab1_final,1615,64,<1e-300
 RAG hybrid+rerank,v2test90_K30_rag_hybrid_rr,46.5,44.1,44.4,818,6779,v2test90_K30_grpo_stab1_final,1612,56,<1e-300
 RAG hybrid,v2test90_K30_rag_hybrid,42.1,39.4,43.8,802,5054,v2test90_K30_grpo_stab1_final,1760,48,<1e-300
 RAG dense,v2test90_K30_rag_dense,30.0,26.0,36.8,763,5054,v2test90_K30_grpo_stab1_final,2166,30,<1e-300

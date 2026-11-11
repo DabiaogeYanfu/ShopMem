@@ -1,14 +1,14 @@
-"""Chapter-4 figures for the JMS manuscript, style 3 (2026-11-02): figures4papers look in the PuBu theme.
+"""Section-4 figures for the manuscript, style 3: figures4papers look in the PuBu theme.
 
-    python -m memeval.paper_figs_jms3 grpo waterfall kcurve retrieval gate growth    # or: all
+    python -m memeval.paper_figs3 grpo waterfall kcurve retrieval gate growth    # or: all
 
 Look (after github.com/ChenLiu-1996/figures4papers, design-theory.md): drawn at 2x print size (double
 column = 14.32 in, single = 7.0 in) with large sans text (Roboto, Apache-2.0, shipped in assets/fonts),
 thick black left/bottom spines, no grid, frameless legends, arrows on y labels (higher/lower is better),
 grey dashed reference lines, one colour family (matplotlib PuBu: ShopMem darkest, others lighter
 steps), same-hue depth for cumulative ablations, hatching for subtypes. Panel tags "(a)" sit under each
-panel. Data come from the same frozen runs and verified loaders as memeval.paper_figs_jms(2); outputs go
-to results/paper_jms_v3/ through memeval.figures.save (pdf + png + csv + meta.json).
+panel. Data come from the same frozen runs and verified loaders as memeval.paper_figs(2); outputs go
+to results/paper_figs_v3/ through memeval.figures.save (pdf + png + csv + meta.json).
 """
 import json
 import sys
@@ -22,11 +22,11 @@ from matplotlib.collections import LineCollection
 from matplotlib.colors import to_hex, to_rgba
 
 from memeval.figures import save
-from memeval.paper_figs_jms import (CAT, DEV30, ONE_SESSION, T90, WRITERS, density, flat_turns, gate_rates, jsonl,
+from memeval.paper_figs import (CAT, DEV30, ONE_SESSION, T90, WRITERS, density, flat_turns, gate_rates, jsonl,
                                     render_turn_line, render_unit, retrieval_rates, written_turns)
-from memeval.paper_figs_jms2 import GRPO_RUNS, STEPS, band, dev_points, ema, summary
+from memeval.paper_figs2 import GRPO_RUNS, STEPS, band, dev_points, ema, summary
 
-OUT = Path('results/paper_jms_v3')
+OUT = Path('results/paper_figs_v3')
 RUNS = Path('runs')
 for f in Path('assets/fonts').glob('Roboto-*.ttf'):
     font_manager.fontManager.addfont(str(f))

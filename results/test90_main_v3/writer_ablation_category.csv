@@ -12,94 +12,94 @@ ShopMem (Writer + Reader),temporal_order,97.4
 ShopMem (Writer + Reader),tool_evidence_recall,93.3
 ShopMem (Writer + Reader),unanswerable,97.8
 ShopMem (Writer + Reader),working_memory_snapshot,97.4
-w/o SUPERSEDE/EXPIRE,conditioned_parameter,93.7
-w/o SUPERSEDE/EXPIRE,constraint_recall,99.3
-w/o SUPERSEDE/EXPIRE,cross_role_dependency,71.9
-w/o SUPERSEDE/EXPIRE,failed_intervention,94.1
-w/o SUPERSEDE/EXPIRE,multi_hop_event,46.7
-w/o SUPERSEDE/EXPIRE,shift_temporal,94.1
-w/o SUPERSEDE/EXPIRE,single_hop_fact,94.4
-w/o SUPERSEDE/EXPIRE,state_tracking,97.0
-w/o SUPERSEDE/EXPIRE,superseded_fact,90.7
-w/o SUPERSEDE/EXPIRE,temporal_order,98.5
-w/o SUPERSEDE/EXPIRE,tool_evidence_recall,93.0
-w/o SUPERSEDE/EXPIRE,unanswerable,98.9
-w/o SUPERSEDE/EXPIRE,working_memory_snapshot,86.7
-w/o r_ind,conditioned_parameter,87.0
-w/o r_ind,constraint_recall,98.9
-w/o r_ind,cross_role_dependency,79.6
-w/o r_ind,failed_intervention,93.3
-w/o r_ind,multi_hop_event,43.0
-w/o r_ind,shift_temporal,95.2
-w/o r_ind,single_hop_fact,93.7
-w/o r_ind,state_tracking,93.7
-w/o r_ind,superseded_fact,91.9
-w/o r_ind,temporal_order,97.8
-w/o r_ind,tool_evidence_recall,93.7
-w/o r_ind,unanswerable,98.9
-w/o r_ind,working_memory_snapshot,93.3
-w/o r_evid,conditioned_parameter,89.3
-w/o r_evid,constraint_recall,97.8
-w/o r_evid,cross_role_dependency,75.9
-w/o r_evid,failed_intervention,91.5
-w/o r_evid,multi_hop_event,42.2
-w/o r_evid,shift_temporal,95.9
-w/o r_evid,single_hop_fact,91.5
-w/o r_evid,state_tracking,99.3
-w/o r_evid,superseded_fact,92.2
-w/o r_evid,temporal_order,95.6
-w/o r_evid,tool_evidence_recall,95.2
-w/o r_evid,unanswerable,98.1
-w/o r_evid,working_memory_snapshot,98.1
-One-shot answerer: SFT Writer,conditioned_parameter,25.2
-One-shot answerer: SFT Writer,constraint_recall,71.1
-One-shot answerer: SFT Writer,cross_role_dependency,37.0
-One-shot answerer: SFT Writer,failed_intervention,59.3
-One-shot answerer: SFT Writer,multi_hop_event,2.6
-One-shot answerer: SFT Writer,shift_temporal,81.5
-One-shot answerer: SFT Writer,single_hop_fact,61.5
-One-shot answerer: SFT Writer,state_tracking,52.6
-One-shot answerer: SFT Writer,superseded_fact,41.5
-One-shot answerer: SFT Writer,temporal_order,72.2
-One-shot answerer: SFT Writer,tool_evidence_recall,54.4
-One-shot answerer: SFT Writer,unanswerable,80.4
-One-shot answerer: SFT Writer,working_memory_snapshot,54.1
-One-shot: w/o SUPERSEDE/EXPIRE,conditioned_parameter,25.2
-One-shot: w/o SUPERSEDE/EXPIRE,constraint_recall,84.4
-One-shot: w/o SUPERSEDE/EXPIRE,cross_role_dependency,37.0
-One-shot: w/o SUPERSEDE/EXPIRE,failed_intervention,63.3
-One-shot: w/o SUPERSEDE/EXPIRE,multi_hop_event,1.5
-One-shot: w/o SUPERSEDE/EXPIRE,shift_temporal,78.1
-One-shot: w/o SUPERSEDE/EXPIRE,single_hop_fact,66.7
-One-shot: w/o SUPERSEDE/EXPIRE,state_tracking,50.0
-One-shot: w/o SUPERSEDE/EXPIRE,superseded_fact,37.4
-One-shot: w/o SUPERSEDE/EXPIRE,temporal_order,73.7
-One-shot: w/o SUPERSEDE/EXPIRE,tool_evidence_recall,51.1
-One-shot: w/o SUPERSEDE/EXPIRE,unanswerable,80.7
-One-shot: w/o SUPERSEDE/EXPIRE,working_memory_snapshot,34.4
-One-shot: w/o r_ind,conditioned_parameter,22.6
-One-shot: w/o r_ind,constraint_recall,68.5
-One-shot: w/o r_ind,cross_role_dependency,37.0
-One-shot: w/o r_ind,failed_intervention,65.2
-One-shot: w/o r_ind,multi_hop_event,2.6
-One-shot: w/o r_ind,shift_temporal,80.4
-One-shot: w/o r_ind,single_hop_fact,64.1
-One-shot: w/o r_ind,state_tracking,51.5
-One-shot: w/o r_ind,superseded_fact,40.0
-One-shot: w/o r_ind,temporal_order,72.6
-One-shot: w/o r_ind,tool_evidence_recall,50.4
-One-shot: w/o r_ind,unanswerable,81.1
-One-shot: w/o r_ind,working_memory_snapshot,50.7
-One-shot: w/o r_evid,conditioned_parameter,26.7
-One-shot: w/o r_evid,constraint_recall,78.1
-One-shot: w/o r_evid,cross_role_dependency,38.5
-One-shot: w/o r_evid,failed_intervention,55.9
-One-shot: w/o r_evid,multi_hop_event,0.4
-One-shot: w/o r_evid,shift_temporal,82.6
-One-shot: w/o r_evid,single_hop_fact,67.8
-One-shot: w/o r_evid,state_tracking,47.0
-One-shot: w/o r_evid,superseded_fact,37.4
-One-shot: w/o r_evid,temporal_order,79.6
-One-shot: w/o r_evid,tool_evidence_recall,55.2
-One-shot: w/o r_evid,unanswerable,84.1
-One-shot: w/o r_evid,working_memory_snapshot,55.2
+Without SUPERSEDE/EXPIRE,conditioned_parameter,93.7
+Without SUPERSEDE/EXPIRE,constraint_recall,99.3
+Without SUPERSEDE/EXPIRE,cross_role_dependency,71.9
+Without SUPERSEDE/EXPIRE,failed_intervention,94.1
+Without SUPERSEDE/EXPIRE,multi_hop_event,46.7
+Without SUPERSEDE/EXPIRE,shift_temporal,94.1
+Without SUPERSEDE/EXPIRE,single_hop_fact,94.4
+Without SUPERSEDE/EXPIRE,state_tracking,97.0
+Without SUPERSEDE/EXPIRE,superseded_fact,90.7
+Without SUPERSEDE/EXPIRE,temporal_order,98.5
+Without SUPERSEDE/EXPIRE,tool_evidence_recall,93.0
+Without SUPERSEDE/EXPIRE,unanswerable,98.9
+Without SUPERSEDE/EXPIRE,working_memory_snapshot,86.7
+Without r_ind,conditioned_parameter,87.0
+Without r_ind,constraint_recall,98.9
+Without r_ind,cross_role_dependency,79.6
+Without r_ind,failed_intervention,93.3
+Without r_ind,multi_hop_event,43.0
+Without r_ind,shift_temporal,95.2
+Without r_ind,single_hop_fact,93.7
+Without r_ind,state_tracking,93.7
+Without r_ind,superseded_fact,91.9
+Without r_ind,temporal_order,97.8
+Without r_ind,tool_evidence_recall,93.7
+Without r_ind,unanswerable,98.9
+Without r_ind,working_memory_snapshot,93.3
+Without r_evid,conditioned_parameter,89.3
+Without r_evid,constraint_recall,97.8
+Without r_evid,cross_role_dependency,75.9
+Without r_evid,failed_intervention,91.5
+Without r_evid,multi_hop_event,42.2
+Without r_evid,shift_temporal,95.9
+Without r_evid,single_hop_fact,91.5
+Without r_evid,state_tracking,99.3
+Without r_evid,superseded_fact,92.2
+Without r_evid,temporal_order,95.6
+Without r_evid,tool_evidence_recall,95.2
+Without r_evid,unanswerable,98.1
+Without r_evid,working_memory_snapshot,98.1
+Single retrieval: full Writer,conditioned_parameter,25.2
+Single retrieval: full Writer,constraint_recall,71.1
+Single retrieval: full Writer,cross_role_dependency,37.0
+Single retrieval: full Writer,failed_intervention,59.3
+Single retrieval: full Writer,multi_hop_event,2.6
+Single retrieval: full Writer,shift_temporal,81.5
+Single retrieval: full Writer,single_hop_fact,61.5
+Single retrieval: full Writer,state_tracking,52.6
+Single retrieval: full Writer,superseded_fact,41.5
+Single retrieval: full Writer,temporal_order,72.2
+Single retrieval: full Writer,tool_evidence_recall,54.4
+Single retrieval: full Writer,unanswerable,80.4
+Single retrieval: full Writer,working_memory_snapshot,54.1
+Single retrieval: without SUPERSEDE/EXPIRE,conditioned_parameter,25.2
+Single retrieval: without SUPERSEDE/EXPIRE,constraint_recall,84.4
+Single retrieval: without SUPERSEDE/EXPIRE,cross_role_dependency,37.0
+Single retrieval: without SUPERSEDE/EXPIRE,failed_intervention,63.3
+Single retrieval: without SUPERSEDE/EXPIRE,multi_hop_event,1.5
+Single retrieval: without SUPERSEDE/EXPIRE,shift_temporal,78.1
+Single retrieval: without SUPERSEDE/EXPIRE,single_hop_fact,66.7
+Single retrieval: without SUPERSEDE/EXPIRE,state_tracking,50.0
+Single retrieval: without SUPERSEDE/EXPIRE,superseded_fact,37.4
+Single retrieval: without SUPERSEDE/EXPIRE,temporal_order,73.7
+Single retrieval: without SUPERSEDE/EXPIRE,tool_evidence_recall,51.1
+Single retrieval: without SUPERSEDE/EXPIRE,unanswerable,80.7
+Single retrieval: without SUPERSEDE/EXPIRE,working_memory_snapshot,34.4
+Single retrieval: without r_ind,conditioned_parameter,22.6
+Single retrieval: without r_ind,constraint_recall,68.5
+Single retrieval: without r_ind,cross_role_dependency,37.0
+Single retrieval: without r_ind,failed_intervention,65.2
+Single retrieval: without r_ind,multi_hop_event,2.6
+Single retrieval: without r_ind,shift_temporal,80.4
+Single retrieval: without r_ind,single_hop_fact,64.1
+Single retrieval: without r_ind,state_tracking,51.5
+Single retrieval: without r_ind,superseded_fact,40.0
+Single retrieval: without r_ind,temporal_order,72.6
+Single retrieval: without r_ind,tool_evidence_recall,50.4
+Single retrieval: without r_ind,unanswerable,81.1
+Single retrieval: without r_ind,working_memory_snapshot,50.7
+Single retrieval: without r_evid,conditioned_parameter,26.7
+Single retrieval: without r_evid,constraint_recall,78.1
+Single retrieval: without r_evid,cross_role_dependency,38.5
+Single retrieval: without r_evid,failed_intervention,55.9
+Single retrieval: without r_evid,multi_hop_event,0.4
+Single retrieval: without r_evid,shift_temporal,82.6
+Single retrieval: without r_evid,single_hop_fact,67.8
+Single retrieval: without r_evid,state_tracking,47.0
+Single retrieval: without r_evid,superseded_fact,37.4
+Single retrieval: without r_evid,temporal_order,79.6
+Single retrieval: without r_evid,tool_evidence_recall,55.2
+Single retrieval: without r_evid,unanswerable,84.1
+Single retrieval: without r_evid,working_memory_snapshot,55.2

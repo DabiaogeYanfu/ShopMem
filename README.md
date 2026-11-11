@@ -12,13 +12,14 @@ Code and data for the paper **"ShopMem: Learning to write and read long-term mem
 | Method | Judge accuracy (%) | Context tokens |
 |---|---:|---:|
 | **ShopMem (Writer + Reader)** | **90.9** | 2,092 |
-| ShopMem-Writer (SFT), one-shot reading | 53.3 | 1,017 |
-| RAG hybrid + rerank | 46.5 | 818 |
+| Writer + single retrieval | 53.3 | 1,017 |
+| ShopMem-Prompt | 46.7 | 1,171 |
+| RAG (fusion + rerank) | 46.5 | 818 |
 | Observation mask | 32.0 | 74,093 |
 | Full context | 29.5 | 98,964 |
 | SimpleMem | 20.1 | 3,811 |
 
-The full table, per-category results, and ablations are in `results/test90_main_v3/`.
+Method names follow the paper. The full table, per-category results, and ablations are in `results/test90_main_v3/`.
 
 ## Repository layout
 
@@ -32,8 +33,9 @@ memeval/            core library
   run.py, score.py            run a method on a split; LLM-judge scoring
   reader_rl.py, sft_data.py, topr_data.py                      training data / rewards
 scripts/            training (train_writer_*.py, train_reader_*.py) and experiment launch scripts
-data/long/{en,zh}/  M-LoCoMo long-history splits: train / dev30 / test90, K = number of stacked scenarios
-data/generated*/    single-scenario source corpus (100 scenarios, 3,900 questions per language)
+data/long/{en,zh}/  M-LoCoMo long-history splits: train (80) / dev30 (30) / test90 (90 held-out), K = number of interleaved scenarios
+data/generated*/    single-scenario source corpus (200 scenarios, 7,800 questions per language;
+                    train 80 / dev 10 + dev_ext 20 / test 10 + test_ext 80)
 generation/         dataset generators (fixed seed)
 evaluation/         dataset validation, statistics, audits
 schema/, ontology/  JSON Schemas and vocabularies (ISA-95-aligned entities and events)

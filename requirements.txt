@@ -2,6 +2,7 @@
 openai>=1.0
 numpy
 tiktoken
+jieba          # Chinese tokenisation for BM25
 matplotlib
 pytest
 # training the Writer / Reader (separate environment was used):

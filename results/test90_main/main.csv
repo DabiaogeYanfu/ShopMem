@@ -1,6 +1,6 @@
 method,run,judge_acc,judge_acc_answerable,f1_answerable,context_tokens,memory_entries,sft_only,method_only,mcnemar_p
-ShopMem-Writer (SFT),v2test90_K30_writer_sft_ep3,50.7,48.2,41.1,1019,874,0,0,1
-ShopMem v1,v2test90_K30_shopmem_v1,46.7,43.5,41.9,1171,1385,611,470,2e-05
+Writer + single retrieval,v2test90_K30_writer_sft_ep3,50.7,48.2,41.1,1019,874,0,0,1
+ShopMem-Prompt,v2test90_K30_shopmem_v1,46.7,43.5,41.9,1171,1385,611,470,2e-05
 RAG hybrid+rerank,v2test90_K30_rag_hybrid_rr,46.5,44.1,44.4,818,6779,721,575,5.5e-05
 RAG hybrid,v2test90_K30_rag_hybrid,42.1,39.4,43.8,802,5054,771,469,8.7e-18
 RAG dense,v2test90_K30_rag_dense,30.0,26.0,36.8,763,5054,1008,282,5.6e-96

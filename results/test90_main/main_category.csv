@@ -1,30 +1,30 @@
 method,category,judge_acc
-ShopMem-Writer (SFT),conditioned_parameter,25.2
-ShopMem-Writer (SFT),constraint_recall,71.1
-ShopMem-Writer (SFT),cross_role_dependency,2.2
-ShopMem-Writer (SFT),failed_intervention,59.3
-ShopMem-Writer (SFT),multi_hop_event,2.6
-ShopMem-Writer (SFT),shift_temporal,81.5
-ShopMem-Writer (SFT),single_hop_fact,61.5
-ShopMem-Writer (SFT),state_tracking,52.6
-ShopMem-Writer (SFT),superseded_fact,41.9
-ShopMem-Writer (SFT),temporal_order,72.2
-ShopMem-Writer (SFT),tool_evidence_recall,54.4
-ShopMem-Writer (SFT),unanswerable,80.4
-ShopMem-Writer (SFT),working_memory_snapshot,54.1
-ShopMem v1,conditioned_parameter,12.2
-ShopMem v1,constraint_recall,73.7
-ShopMem v1,cross_role_dependency,20.4
-ShopMem v1,failed_intervention,67.8
-ShopMem v1,multi_hop_event,1.1
-ShopMem v1,shift_temporal,73.7
-ShopMem v1,single_hop_fact,62.2
-ShopMem v1,state_tracking,55.9
-ShopMem v1,superseded_fact,30.7
-ShopMem v1,temporal_order,67.0
-ShopMem v1,tool_evidence_recall,50.4
-ShopMem v1,unanswerable,84.1
-ShopMem v1,working_memory_snapshot,7.4
+Writer + single retrieval,conditioned_parameter,25.2
+Writer + single retrieval,constraint_recall,71.1
+Writer + single retrieval,cross_role_dependency,2.2
+Writer + single retrieval,failed_intervention,59.3
+Writer + single retrieval,multi_hop_event,2.6
+Writer + single retrieval,shift_temporal,81.5
+Writer + single retrieval,single_hop_fact,61.5
+Writer + single retrieval,state_tracking,52.6
+Writer + single retrieval,superseded_fact,41.9
+Writer + single retrieval,temporal_order,72.2
+Writer + single retrieval,tool_evidence_recall,54.4
+Writer + single retrieval,unanswerable,80.4
+Writer + single retrieval,working_memory_snapshot,54.1
+ShopMem-Prompt,conditioned_parameter,12.2
+ShopMem-Prompt,constraint_recall,73.7
+ShopMem-Prompt,cross_role_dependency,20.4
+ShopMem-Prompt,failed_intervention,67.8
+ShopMem-Prompt,multi_hop_event,1.1
+ShopMem-Prompt,shift_temporal,73.7
+ShopMem-Prompt,single_hop_fact,62.2
+ShopMem-Prompt,state_tracking,55.9
+ShopMem-Prompt,superseded_fact,30.7
+ShopMem-Prompt,temporal_order,67.0
+ShopMem-Prompt,tool_evidence_recall,50.4
+ShopMem-Prompt,unanswerable,84.1
+ShopMem-Prompt,working_memory_snapshot,7.4
 RAG hybrid+rerank,conditioned_parameter,8.1
 RAG hybrid+rerank,constraint_recall,82.2
 RAG hybrid+rerank,cross_role_dependency,47.4

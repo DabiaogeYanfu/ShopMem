@@ -1,8 +1,8 @@
-"""Chapter-4 figures for the JMS manuscript (plan: 圖表規劃_JMS_v2.md), one function per figure.
+"""Section-4 figures for the manuscript, one function per figure.
 
-    python -m memeval.paper_figs_jms fig06 [fig07 ...]      # or: all
+    python -m memeval.paper_figs fig06 [fig07 ...]      # or: all
 
-Every figure goes to results/paper_jms/figNN_<name>.{pdf,png,csv,meta.json} through memeval.figures.save,
+Every figure goes to results/paper_figs/figNN_<name>.{pdf,png,csv,meta.json} through memeval.figures.save,
 with the house style of memeval.figures (ours blue, SimpleMem orange, other baselines grey; 8 pt text).
 Numbers come from the frozen test90 tables (results/test90_main_v3), the run summaries and the raw
 predictions / banks / traces; nothing here calls a model.
@@ -23,7 +23,7 @@ from matplotlib.colors import LinearSegmentedColormap, TwoSlopeNorm
 from memeval.figures import (CATEGORICAL, CATEGORY_LABELS, DOUBLE, GRID, INK, INK_2, INK_3, MARKERS, NEUTRAL,
                              SEQUENTIAL_BLUE, SINGLE, SURFACE, place_labels, save, style)
 
-OUT = Path('results/paper_jms')
+OUT = Path('results/paper_figs')
 RUNS = Path('runs')
 MAIN = Path('results/test90_main_v3')
 T90 = Path('data/long/en/test90')
@@ -34,8 +34,8 @@ OURS_LIGHT = SEQUENTIAL_BLUE[2]
 SIMPLEMEM = CATEGORICAL[1]
 RED = '#d64545'
 
-DISPLAY = {'ShopMem (Writer + Reader)': 'ShopMem', 'ShopMem-Writer (SFT), one-shot': 'Writer + one-shot',
-           'ShopMem v1': 'ShopMem-Prompt', 'RAG hybrid+rerank': 'RAG hybrid+rerank', 'RAG hybrid': 'RAG hybrid',
+DISPLAY = {'ShopMem (Writer + Reader)': 'ShopMem', 'Writer + single retrieval': 'Writer + one-shot',
+           'ShopMem-Prompt': 'ShopMem-Prompt', 'RAG hybrid+rerank': 'RAG hybrid+rerank', 'RAG hybrid': 'RAG hybrid',
            'RAG dense': 'RAG dense', 'RAG BM25': 'RAG BM25', 'SimpleMem': 'SimpleMem',
            'Full context (plain)': 'Full context', 'Observation mask': 'Obs. mask',
            'Sliding window': 'Sliding window'}
@@ -278,8 +278,8 @@ def fig07():
 
 
 # --------------------------------------------------------------------------------------------- fig 9
-ABL = [('w/o SUPERSEDE/EXPIRE', 'w/o close\n(SUPERSEDE/EXPIRE)'), ('w/o r_ind', 'w/o $r_{\\mathrm{ind}}$'),
-       ('w/o r_evid', 'w/o $r_{\\mathrm{evid}}$')]
+ABL = [('Without SUPERSEDE/EXPIRE', 'w/o close\n(SUPERSEDE/EXPIRE)'), ('Without r_ind', 'w/o $r_{\\mathrm{ind}}$'),
+       ('Without r_evid', 'w/o $r_{\\mathrm{evid}}$')]
 
 
 def fig09():

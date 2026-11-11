@@ -1,197 +1,197 @@
 {
   "corpus": {
     "zh": {
-      "scenarios": 100,
+      "scenarios": 200,
       "domains": {
-        "maintenance": 25,
-        "quality": 25,
-        "process": 25,
-        "logistics": 25
+        "maintenance": 50,
+        "quality": 50,
+        "process": 50,
+        "logistics": 50
       },
-      "sessions": 500,
-      "turns": 5656,
-      "turns_per_session": 11.312,
-      "turns_per_scenario": 56.56,
-      "text_tokens": 273371,
-      "formatted_tokens_per_scenario": 3946.15,
-      "questions": 3900,
-      "unanswerable_questions": 300,
+      "sessions": 1000,
+      "turns": 11238,
+      "turns_per_session": 11.238,
+      "turns_per_scenario": 56.19,
+      "text_tokens": 541708,
+      "formatted_tokens_per_scenario": 3913.3,
+      "questions": 7800,
+      "unanswerable_questions": 600,
       "evidence_per_question": 8.583333333333334,
-      "low_density_turn_ratio": 0.7347949080622348,
-      "low_density_token_ratio": 0.6234201872181029,
-      "turns_with_resolved_time": 353,
-      "turns_with_resolved_shift": 321,
-      "turns_with_resolved_entities": 226,
+      "low_density_turn_ratio": 0.7330485851575014,
+      "low_density_token_ratio": 0.6200831444246716,
+      "turns_with_resolved_time": 687,
+      "turns_with_resolved_shift": 639,
+      "turns_with_resolved_entities": 426,
       "sessions_by_shift": {
-        "夜班": 191,
-        "中班": 88,
-        "早班": 108,
-        "白班": 113
+        "夜班": 381,
+        "中班": 199,
+        "早班": 212,
+        "白班": 208
       },
       "by_turn_type": {
         "user_query": {
-          "turns": 400,
-          "tokens": 14749,
+          "turns": 800,
+          "tokens": 29430,
           "low_density_ratio": 0.0,
-          "tokens_per_turn": 36.8725,
-          "token_share": 0.053952321204516936
+          "tokens_per_turn": 36.7875,
+          "token_share": 0.05432816203563543
         },
         "agent_think": {
-          "turns": 944,
-          "tokens": 15370,
+          "turns": 1894,
+          "tokens": 30462,
           "low_density_ratio": 1.0,
-          "tokens_per_turn": 16.281779661016948,
-          "token_share": 0.05622395938120722
+          "tokens_per_turn": 16.083421330517425,
+          "token_share": 0.056233247432195946
         },
         "agent_tool_call": {
-          "turns": 1202,
-          "tokens": 35733,
+          "turns": 2380,
+          "tokens": 70743,
           "low_density_ratio": 1.0,
-          "tokens_per_turn": 29.727953410981698,
-          "token_share": 0.13071247498820285
+          "tokens_per_turn": 29.72394957983193,
+          "token_share": 0.13059249632643416
         },
         "tool_observation": {
-          "turns": 1202,
-          "tokens": 176353,
-          "low_density_ratio": 0.6672212978369384,
-          "tokens_per_turn": 146.71630615640598,
-          "token_share": 0.6451050038226439
+          "turns": 2380,
+          "tokens": 349217,
+          "low_density_ratio": 0.6638655462184874,
+          "tokens_per_turn": 146.7298319327731,
+          "token_share": 0.6446591152428984
         },
         "agent_response": {
-          "turns": 526,
-          "tokens": 12080,
-          "low_density_ratio": 0.23954372623574144,
-          "tokens_per_turn": 22.96577946768061,
-          "token_share": 0.04418903248698655
+          "turns": 1046,
+          "tokens": 24067,
+          "low_density_ratio": 0.23518164435946462,
+          "tokens_per_turn": 23.008604206500955,
+          "token_share": 0.04442799441765675
         },
         "human": {
-          "turns": 1223,
-          "tokens": 16414,
-          "low_density_ratio": 0.7547015535568274,
-          "tokens_per_turn": 13.421095666394113,
-          "token_share": 0.060042945301440165
+          "turns": 2416,
+          "tokens": 32492,
+          "low_density_ratio": 0.7516556291390728,
+          "tokens_per_turn": 13.448675496688741,
+          "token_share": 0.05998065378395741
         },
         "tool_call": {
-          "turns": 159,
-          "tokens": 2672,
+          "turns": 322,
+          "tokens": 5297,
           "low_density_ratio": 1.0,
-          "tokens_per_turn": 16.80503144654088,
-          "token_share": 0.009774262815002323
+          "tokens_per_turn": 16.450310559006212,
+          "token_share": 0.009778330761221914
         }
       },
       "by_category": {
         "conditioned_parameter": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "medium": 300
+            "medium": 600
           },
           "evidence_turns": 13,
           "required_events": 5,
           "answer_tokens": 70.95
         },
         "constraint_recall": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "easy": 300
+            "easy": 600
           },
           "evidence_turns": 1,
           "required_events": 1,
           "answer_tokens": 25
         },
         "cross_role_dependency": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "hard": 300
+            "hard": 600
           },
           "evidence_turns": 13,
           "required_events": 5,
           "answer_tokens": 21
         },
         "failed_intervention": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "medium": 300
+            "medium": 600
           },
           "evidence_turns": 13,
           "required_events": 5,
           "answer_tokens": 28.75
         },
         "multi_hop_event": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "hard": 300
+            "hard": 600
           },
           "evidence_turns": 13,
           "required_events": 5,
-          "answer_tokens": 129.13
+          "answer_tokens": 129.135
         },
         "shift_temporal": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "medium": 300
+            "medium": 600
           },
           "evidence_turns": 2,
           "required_events": 1,
-          "answer_tokens": 17.92
+          "answer_tokens": 17.965
         },
         "single_hop_fact": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "easy": 300
+            "easy": 600
           },
           "evidence_turns": 3,
           "required_events": 1,
           "answer_tokens": 25.15
         },
         "state_tracking": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "easy": 300
+            "easy": 600
           },
           "evidence_turns": 3,
           "required_events": 1,
           "answer_tokens": 23.25
         },
         "superseded_fact": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "medium": 300
+            "medium": 600
           },
           "evidence_turns": 13,
           "required_events": 5,
           "answer_tokens": 61.95
         },
         "temporal_order": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "medium": 300
+            "medium": 600
           },
           "evidence_turns": 13,
           "required_events": 5,
           "answer_tokens": 66.95
         },
         "tool_evidence_recall": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "medium": 300
+            "medium": 600
           },
           "evidence_turns": 1,
           "required_events": 1,
           "answer_tokens": 46.3
         },
         "unanswerable": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "hard": 300
+            "hard": 600
           },
           "evidence_turns": 0,
           "required_events": 0,
           "answer_tokens": 10
         },
         "working_memory_snapshot": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "hard": 300
+            "hard": 600
           },
           "evidence_turns": 15,
           "required_events": 5,
@@ -200,196 +200,196 @@
       }
     },
     "en": {
-      "scenarios": 100,
+      "scenarios": 200,
       "domains": {
-        "maintenance": 25,
-        "quality": 25,
-        "process": 25,
-        "logistics": 25
+        "maintenance": 50,
+        "quality": 50,
+        "process": 50,
+        "logistics": 50
       },
-      "sessions": 500,
-      "turns": 5653,
-      "turns_per_session": 11.306,
-      "turns_per_scenario": 56.53,
-      "text_tokens": 273976,
-      "formatted_tokens_per_scenario": 3936.48,
-      "questions": 3900,
-      "unanswerable_questions": 300,
+      "sessions": 1000,
+      "turns": 11299,
+      "turns_per_session": 11.299,
+      "turns_per_scenario": 56.495,
+      "text_tokens": 541318,
+      "formatted_tokens_per_scenario": 3902.575,
+      "questions": 7800,
+      "unanswerable_questions": 600,
       "evidence_per_question": 8.583333333333334,
-      "low_density_turn_ratio": 0.7346541659295949,
-      "low_density_token_ratio": 0.6257299909481122,
-      "turns_with_resolved_time": 345,
-      "turns_with_resolved_shift": 321,
-      "turns_with_resolved_entities": 228,
+      "low_density_turn_ratio": 0.7344897778564474,
+      "low_density_token_ratio": 0.6211376676925578,
+      "turns_with_resolved_time": 694,
+      "turns_with_resolved_shift": 635,
+      "turns_with_resolved_entities": 449,
       "sessions_by_shift": {
-        "Night shift": 218,
-        "Swing shift": 89,
-        "Day shift": 193
+        "Night shift": 406,
+        "Swing shift": 187,
+        "Day shift": 407
       },
       "by_turn_type": {
         "user_query": {
-          "turns": 400,
-          "tokens": 14549,
+          "turns": 800,
+          "tokens": 29076,
           "low_density_ratio": 0.0,
-          "tokens_per_turn": 36.3725,
-          "token_share": 0.05310319152042515
+          "tokens_per_turn": 36.345,
+          "token_share": 0.05371334409718502
         },
         "agent_think": {
-          "turns": 935,
-          "tokens": 14879,
+          "turns": 1885,
+          "tokens": 29977,
           "low_density_ratio": 1.0,
-          "tokens_per_turn": 15.91336898395722,
-          "token_share": 0.054307676584810345
+          "tokens_per_turn": 15.902917771883288,
+          "token_share": 0.05537780011010164
         },
         "agent_tool_call": {
-          "turns": 1215,
-          "tokens": 36128,
+          "turns": 2405,
+          "tokens": 71254,
           "low_density_ratio": 1.0,
-          "tokens_per_turn": 29.734979423868314,
-          "token_share": 0.13186556486699566
+          "tokens_per_turn": 29.627442827442827,
+          "token_share": 0.13163057574290898
         },
         "tool_observation": {
-          "turns": 1215,
-          "tokens": 178049,
-          "low_density_ratio": 0.6707818930041153,
-          "tokens_per_turn": 146.5423868312757,
-          "token_share": 0.6498707916021841
+          "turns": 2405,
+          "tokens": 350030,
+          "low_density_ratio": 0.6673596673596673,
+          "tokens_per_turn": 145.54261954261955,
+          "token_share": 0.6466254586028914
         },
         "agent_response": {
-          "turns": 517,
-          "tokens": 11859,
-          "low_density_ratio": 0.2263056092843327,
-          "tokens_per_turn": 22.938104448742745,
-          "token_share": 0.04328481326831547
+          "turns": 1036,
+          "tokens": 23740,
+          "low_density_ratio": 0.2277992277992278,
+          "tokens_per_turn": 22.915057915057915,
+          "token_share": 0.04385592202734807
         },
         "human": {
-          "turns": 1210,
-          "tokens": 16007,
-          "low_density_ratio": 0.7520661157024794,
-          "tokens_per_turn": 13.22892561983471,
-          "token_share": 0.0584248255321634
+          "turns": 2450,
+          "tokens": 32267,
+          "low_density_ratio": 0.7551020408163265,
+          "tokens_per_turn": 13.170204081632653,
+          "token_share": 0.059608215503641114
         },
         "tool_call": {
-          "turns": 161,
-          "tokens": 2505,
+          "turns": 318,
+          "tokens": 4974,
           "low_density_ratio": 1.0,
-          "tokens_per_turn": 15.559006211180124,
-          "token_share": 0.009143136625105849
+          "tokens_per_turn": 15.641509433962264,
+          "token_share": 0.009188683915923727
         }
       },
       "by_category": {
         "conditioned_parameter": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "medium": 300
+            "medium": 600
           },
           "evidence_turns": 13,
           "required_events": 5,
           "answer_tokens": 69.85
         },
         "constraint_recall": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "easy": 300
+            "easy": 600
           },
           "evidence_turns": 1,
           "required_events": 1,
           "answer_tokens": 28
         },
         "cross_role_dependency": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "hard": 300
+            "hard": 600
           },
           "evidence_turns": 13,
           "required_events": 5,
           "answer_tokens": 20.5
         },
         "failed_intervention": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "medium": 300
+            "medium": 600
           },
           "evidence_turns": 13,
           "required_events": 5,
           "answer_tokens": 29.6
         },
         "multi_hop_event": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "hard": 300
+            "hard": 600
           },
           "evidence_turns": 13,
           "required_events": 5,
-          "answer_tokens": 126.71
+          "answer_tokens": 126.72
         },
         "shift_temporal": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "medium": 300
+            "medium": 600
           },
           "evidence_turns": 2,
           "required_events": 1,
-          "answer_tokens": 18.31
+          "answer_tokens": 18.2
         },
         "single_hop_fact": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "easy": 300
+            "easy": 600
           },
           "evidence_turns": 3,
           "required_events": 1,
           "answer_tokens": 24.95
         },
         "state_tracking": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "easy": 300
+            "easy": 600
           },
           "evidence_turns": 3,
           "required_events": 1,
           "answer_tokens": 24
         },
         "superseded_fact": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "medium": 300
+            "medium": 600
           },
           "evidence_turns": 13,
           "required_events": 5,
           "answer_tokens": 63.1
         },
         "temporal_order": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "medium": 300
+            "medium": 600
           },
           "evidence_turns": 13,
           "required_events": 5,
           "answer_tokens": 60.1
         },
         "tool_evidence_recall": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "medium": 300
+            "medium": 600
           },
           "evidence_turns": 1,
           "required_events": 1,
           "answer_tokens": 48.15
         },
         "unanswerable": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "hard": 300
+            "hard": 600
           },
           "evidence_turns": 0,
           "required_events": 0,
           "answer_tokens": 16
         },
         "working_memory_snapshot": {
-          "questions": 300,
+          "questions": 600,
           "difficulty": {
-            "hard": 300
+            "hard": 600
           },
           "evidence_turns": 15,
           "required_events": 5,
@@ -405,14 +405,14 @@
       "questions": 390,
       "sessions_per_history": 5,
       "turns_per_history": 57.3,
-      "tokens_mean": 3937.4,
+      "tokens_mean": 3926,
       "tokens_min": 3313,
       "tokens_max": 4339,
-      "low_density_token_share": 0.6546299233976441,
+      "low_density_token_share": 0.6535428646752555,
       "same_domain_distractors": 0,
       "max_concurrent_sessions": 1,
-      "evidence_depth_first_mean": 3191.686111111111,
-      "evidence_depth_last_mean": 802.2055555555555
+      "evidence_depth_first_mean": 3182.8416666666667,
+      "evidence_depth_last_mean": 800.7472222222223
     },
     "en/dev/K010": {
       "K": 10,
@@ -420,14 +420,14 @@
       "questions": 390,
       "sessions_per_history": 50,
       "turns_per_history": 573,
-      "tokens_mean": 39374,
-      "tokens_min": 39374,
-      "tokens_max": 39374,
-      "low_density_token_share": 0.6559150708589424,
+      "tokens_mean": 39260,
+      "tokens_min": 39260,
+      "tokens_max": 39260,
+      "low_density_token_share": 0.6549159449821701,
       "same_domain_distractors": 1.6,
       "max_concurrent_sessions": 1,
-      "evidence_depth_first_mean": 21178.352777777778,
-      "evidence_depth_last_mean": 18428.13888888889
+      "evidence_depth_first_mean": 21100.536111111112,
+      "evidence_depth_last_mean": 18360.45
     },
     "en/dev30/K030": {
       "K": 30,
@@ -435,14 +435,14 @@
       "questions": 1170,
       "sessions_per_history": 150,
       "turns_per_history": 1713,
-      "tokens_mean": 118147,
-      "tokens_min": 118147,
-      "tokens_max": 118147,
-      "low_density_token_share": 0.6576552938288742,
+      "tokens_mean": 117773,
+      "tokens_min": 117773,
+      "tokens_max": 117773,
+      "low_density_token_share": 0.6565681438020599,
       "same_domain_distractors": 6.533333333333333,
       "max_concurrent_sessions": 1,
-      "evidence_depth_first_mean": 63158.333333333336,
-      "evidence_depth_last_mean": 56930.40185185185
+      "evidence_depth_first_mean": 62938.59259259259,
+      "evidence_depth_last_mean": 56732.01666666667
     },
     "en/eval/K001": {
       "K": 1,
@@ -450,14 +450,14 @@
       "questions": 3510,
       "sessions_per_history": 5,
       "turns_per_history": 56.44444444444444,
-      "tokens_mean": 3936.3777777777777,
+      "tokens_mean": 3922.211111111111,
       "tokens_min": 3001,
-      "tokens_max": 4916,
-      "low_density_token_share": 0.6563859808237722,
+      "tokens_max": 4808,
+      "low_density_token_share": 0.6552558318333762,
       "same_domain_distractors": 0,
       "max_concurrent_sessions": 1,
-      "evidence_depth_first_mean": 3173.939197530864,
-      "evidence_depth_last_mean": 774.4996913580247
+      "evidence_depth_first_mean": 3162.641975308642,
+      "evidence_depth_last_mean": 772.3070987654321
     },
     "en/eval/K010": {
       "K": 10,
@@ -465,14 +465,14 @@
       "questions": 3510,
       "sessions_per_history": 50,
       "turns_per_history": 564.4444444444445,
-      "tokens_mean": 39363.77777777778,
-      "tokens_min": 37853,
-      "tokens_max": 41544,
-      "low_density_token_share": 0.6589697351206315,
+      "tokens_mean": 39222.11111111111,
+      "tokens_min": 37718,
+      "tokens_max": 41379,
+      "low_density_token_share": 0.6577464138390263,
       "same_domain_distractors": 1.6,
       "max_concurrent_sessions": 1,
-      "evidence_depth_first_mean": 21504.460493827162,
-      "evidence_depth_last_mean": 17756.80802469136
+      "evidence_depth_first_mean": 21435.108333333334,
+      "evidence_depth_last_mean": 17701.67438271605
     },
     "en/eval/K030": {
       "K": 30,
@@ -480,14 +480,14 @@
       "questions": 3510,
       "sessions_per_history": 150,
       "turns_per_history": 1693.3333333333333,
-      "tokens_mean": 118091.33333333333,
-      "tokens_min": 116991,
-      "tokens_max": 119299,
-      "low_density_token_share": 0.6591825190246994,
+      "tokens_mean": 117666.33333333333,
+      "tokens_min": 116579,
+      "tokens_max": 118847,
+      "low_density_token_share": 0.6579520499708601,
       "same_domain_distractors": 6.533333333333333,
       "max_concurrent_sessions": 1,
-      "evidence_depth_first_mean": 62233.84598765432,
-      "evidence_depth_last_mean": 55414.982407407406
+      "evidence_depth_first_mean": 62029.499074074076,
+      "evidence_depth_last_mean": 55235.17901234568
     },
     "en/eval/K090": {
       "K": 90,
@@ -495,14 +495,44 @@
       "questions": 3510,
       "sessions_per_history": 450,
       "turns_per_history": 5080,
-      "tokens_mean": 354274,
-      "tokens_min": 354274,
-      "tokens_max": 354274,
-      "low_density_token_share": 0.6591988122187911,
+      "tokens_mean": 352999,
+      "tokens_min": 352999,
+      "tokens_max": 352999,
+      "low_density_token_share": 0.6579678695973643,
       "same_domain_distractors": 21.511111111111113,
       "max_concurrent_sessions": 2,
-      "evidence_depth_first_mean": 184715.025,
-      "evidence_depth_last_mean": 169058.04567901234
+      "evidence_depth_first_mean": 184099.93055555556,
+      "evidence_depth_last_mean": 168499.82438271606
+    },
+    "en/test90/K001": {
+      "K": 1,
+      "histories": 90,
+      "questions": 3510,
+      "sessions_per_history": 5,
+      "turns_per_history": 56.15555555555556,
+      "tokens_mean": 3865.211111111111,
+      "tokens_min": 2649,
+      "tokens_max": 5057,
+      "low_density_token_share": 0.6485568331835786,
+      "same_domain_distractors": 0,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 3123.0604938271604,
+      "evidence_depth_last_mean": 771.2728395061729
+    },
+    "en/test90/K010": {
+      "K": 10,
+      "histories": 9,
+      "questions": 3510,
+      "sessions_per_history": 50,
+      "turns_per_history": 561.5555555555555,
+      "tokens_mean": 38652.11111111111,
+      "tokens_min": 36138,
+      "tokens_max": 40410,
+      "low_density_token_share": 0.6524304115312799,
+      "same_domain_distractors": 1.6,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 21399.179320987656,
+      "evidence_depth_last_mean": 17731.45
     },
     "en/test90/K030": {
       "K": 30,
@@ -510,14 +540,74 @@
       "questions": 3510,
       "sessions_per_history": 150,
       "turns_per_history": 1684.6666666666667,
-      "tokens_mean": 116353.33333333333,
-      "tokens_min": 112114,
-      "tokens_max": 119264,
-      "low_density_token_share": 0.6538580296450504,
+      "tokens_mean": 115956.33333333333,
+      "tokens_min": 111760,
+      "tokens_max": 118859,
+      "low_density_token_share": 0.6526756248303398,
       "same_domain_distractors": 6.533333333333333,
       "max_concurrent_sessions": 2,
-      "evidence_depth_first_mean": 62052.11759259259,
-      "evidence_depth_last_mean": 55243.72901234568
+      "evidence_depth_first_mean": 61822.80864197531,
+      "evidence_depth_last_mean": 55037.1561728395
+    },
+    "en/test90/K090": {
+      "K": 90,
+      "histories": 1,
+      "questions": 3510,
+      "sessions_per_history": 450,
+      "turns_per_history": 5054,
+      "tokens_mean": 347869,
+      "tokens_min": 347869,
+      "tokens_max": 347869,
+      "low_density_token_share": 0.6529268201535635,
+      "same_domain_distractors": 21.511111111111113,
+      "max_concurrent_sessions": 2,
+      "evidence_depth_first_mean": 183233.43919753085,
+      "evidence_depth_last_mean": 167993.53672839506
+    },
+    "en/train/K010": {
+      "K": 10,
+      "histories": 8,
+      "questions": 3120,
+      "sessions_per_history": 50,
+      "turns_per_history": 566.5,
+      "tokens_mean": 39359.125,
+      "tokens_min": 37512,
+      "tokens_max": 40954,
+      "low_density_token_share": 0.6586520435082126,
+      "same_domain_distractors": 1.6,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 21648.147569444445,
+      "evidence_depth_last_mean": 17826.151388888888
+    },
+    "en/train/K020": {
+      "K": 20,
+      "histories": 4,
+      "questions": 3120,
+      "sessions_per_history": 100,
+      "turns_per_history": 1133,
+      "tokens_mean": 78718.25,
+      "tokens_min": 75033,
+      "tokens_max": 81451,
+      "low_density_token_share": 0.6586155696898408,
+      "same_domain_distractors": 4,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 41852.64618055556,
+      "evidence_depth_last_mean": 36712.27291666667
+    },
+    "en/train/K040": {
+      "K": 40,
+      "histories": 2,
+      "questions": 3120,
+      "sessions_per_history": 200,
+      "turns_per_history": 2266,
+      "tokens_mean": 157436.5,
+      "tokens_min": 156213,
+      "tokens_max": 158660,
+      "low_density_token_share": 0.658894871897497,
+      "same_domain_distractors": 9,
+      "max_concurrent_sessions": 2,
+      "evidence_depth_first_mean": 82707.19097222222,
+      "evidence_depth_last_mean": 74912.94270833333
     },
     "zh/dev/K001": {
       "K": 1,

@@ -6,7 +6,7 @@
  "standard_grpo": "runs/reader_grpo_lr1e5 (lr 1e-5, beta 0.001, std-normalised advantage, sample 16 -> train 8, no select-weight, no TIS); diverged after ~step 20, best dev30 ckpt step20",
  "notes": [
   "baselines (v1, RAG, SimpleMem, full context, observation mask, sliding window) are the v2 runs, unchanged",
-  "one-shot answerer = Qwen3-8B (no thinking), reasoning format, as in v2",
+  "single-retrieval answerer = Qwen3-8B (no thinking), reasoning format, as in v2",
   "Writer ablations retrain SFT on ablated data (no_rind/no_revid) or change the write actions (add_noop); all Writer banks include request units"
  ],
  "script": "scripts/test90_tables_v3.py"

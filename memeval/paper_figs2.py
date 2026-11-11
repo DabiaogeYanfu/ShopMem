@@ -1,12 +1,12 @@
-"""Chapter-4 figures for the JMS manuscript, style 2 (user-chosen look, 2026-11-02).
+"""Section-4 figures for the manuscript, style 2.
 
-    python -m memeval.paper_figs_jms2 grpo waterfall kcurve ...   # or: all
+    python -m memeval.paper_figs2 grpo waterfall kcurve ...   # or: all
 
 Style: one colour theme, matplotlib's PuBu (ShopMem = darkest; others lighter steps of the same ramp);
 Times-like serif text (STIX); no grid; left/bottom spines only; one shared legend centred above the
 panels; panel tags "(a)" centred under each panel; training curves drawn TensorBoard-style (faint raw
-values, bold EMA, light band). Outputs go to results/paper_jms_v2/ through memeval.figures.save
-(pdf + png + csv + meta.json). Data sources are the same frozen runs as memeval.paper_figs_jms.
+values, bold EMA, light band). Outputs go to results/paper_figs_v2/ through memeval.figures.save
+(pdf + png + csv + meta.json). Data sources are the same frozen runs as memeval.paper_figs.
 """
 import json
 import sys
@@ -19,7 +19,7 @@ from matplotlib.colors import to_hex
 
 from memeval.figures import save
 
-OUT = Path('results/paper_jms_v2')
+OUT = Path('results/paper_figs_v2')
 RUNS = Path('runs')
 PUBU = plt.get_cmap('PuBu')
 

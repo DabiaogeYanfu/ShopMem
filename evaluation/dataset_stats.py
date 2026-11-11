@@ -37,7 +37,7 @@ def read_jsonl(path):
 def corpus_stats(lang):
     d = ROOT / LANGS[lang]
     scen, sess, qs = [], [], []
-    for sp in ['train', 'dev', 'test']:
+    for sp in ['train', 'dev', 'dev_ext', 'test', 'test_ext']:
         scen += read_jsonl(d / sp / 'scenarios.jsonl')
         sess += read_jsonl(d / sp / 'sessions.jsonl')
         qs += read_jsonl(d / sp / 'questions.jsonl')
@@ -144,7 +144,7 @@ def k_fmt(x):
 def render(stats):
     L = ['# M-LoCoMo 数据集统计', '',
          '> Token 单位：tiktoken `o200k_base`。“格式化 token”按 Full-context 提示逐行 `[timestamp] role: text` 计。', '']
-    L += ['## 表 1 原始语料（100 场景，全部划分）', '',
+    L += ['## 表 1 原始语料（200 场景，全部划分）', '',
           '| 指标 | ZH | EN |', '|---|---|---|']
     c = {lang: stats['corpus'][lang] for lang in LANGS}
     rows = [('场景数', 'scenarios', '{}'), ('Session 数', 'sessions', '{}'), ('轮次数', 'turns', '{}'),
@@ -167,13 +167,13 @@ def render(stats):
         z, e = c['zh']['by_turn_type'][tt], c['en']['by_turn_type'][tt]
         L.append(f"| {tt} | {z['turns']} | {z['token_share']:.1%} | {z['low_density_ratio']:.1%} | {z['tokens_per_turn']:.1f} "
                  f"| {e['turns']} | {e['token_share']:.1%} | {e['low_density_ratio']:.1%} | {e['tokens_per_turn']:.1f} |")
-    L += ['', '## 表 3 问题类别（100 场景，ZH）', '',
+    L += ['', '## 表 3 问题类别（200 场景，ZH）', '',
           '| 类别 | 题数 | 难度 | 平均证据轮 | 平均所需事件 | 参考答案 token |', '|---|---|---|---|---|---|']
     for cat, v in c['zh']['by_category'].items():
         diff = '/'.join(f'{k}:{n}' for k, n in sorted(v['difficulty'].items()))
         L.append(f"| {cat} | {v['questions']} | {diff} | {v['evidence_turns']:.1f} | {v['required_events']:.1f} | {v['answer_tokens']:.1f} |")
     L += ['', '## 表 4 长历史版本 M-LoCoMo-Long', '',
-          '评测池 eval = train + test（90 场景，2970 题）；dev = 10 场景（330 题），仅用于调参。',
+          '划分按场景进行：train = 80 场景（3120 题），用于训练 Writer 与 Reader；dev30 = 30 场景（1170 题），仅用于调参；test90 = 90 个留出场景（3510 题），为测试集。eval（train 80 场景 + test 10 场景）为早期试验池，论文实验未使用。',
           '“证据深度”= 从最早（或最晚）证据轮到历史末尾的格式化 token 数，衡量需要回溯多远。', '',
           '| 语言 | 池 | K | 历史数 | 题数 | 每历史 session | 每历史轮次 | 每历史 token 均值 [min–max] | 低密度 token 占比 | 同领域干扰场景 | 最大并发 session | 证据深度（最早） | 证据深度（最晚） |',
           '|---|---|---|---|---|---|---|---|---|---|---|---|---|']

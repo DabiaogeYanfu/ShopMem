@@ -1,23 +1,23 @@
 """v3 test90 tables (luna judge, 3510 q, EN K=30) from runs/v2test90_K30_* -> results/test90_main_v3/
 {main, reader_ablation, writer_ablation}.csv (+ *_category.csv) and meta.json. Full method = SFT Writer
 (request units) + GRPO Reader (stab1, final ckpt). McNemar is exact, two-sided, vs the table's reference row.
-v2 tables (one-shot answerer) stay in results/test90_main via scripts/test90_tables.py."""
+v2 tables (single-retrieval answerer) stay in results/test90_main via scripts/test90_tables.py."""
 import csv, json, sys
 from math import comb
 from pathlib import Path
 FULL = 'grpo_stab1_final'
-MAIN = [('ShopMem (Writer + Reader)', FULL), ('ShopMem-Writer (SFT), one-shot', 'writer_sft_ep3_req'),
-        ('ShopMem v1', 'shopmem_v1'), ('RAG hybrid+rerank', 'rag_hybrid_rr'), ('RAG hybrid', 'rag_hybrid'),
+MAIN = [('ShopMem (Writer + Reader)', FULL), ('Writer + single retrieval', 'writer_sft_ep3_req'),
+        ('ShopMem-Prompt', 'shopmem_v1'), ('RAG hybrid+rerank', 'rag_hybrid_rr'), ('RAG hybrid', 'rag_hybrid'),
         ('RAG dense', 'rag_dense'), ('RAG BM25', 'rag_bm25'), ('SimpleMem', 'simplemem'),
         ('Full context (plain)', 'full_context_plain'), ('Observation mask', 'observation_mask'),
         ('Sliding window', 'sliding_window')]
-READER = [('ShopMem (Writer + Reader)', FULL), ('w/o stabilised GRPO (standard GRPO, best ckpt)', 'grpo_lr1e5_step20'),
-          ('w/o GRPO (SFT Reader)', 'reader_sft_sol'), ('w/o search (SFT Reader, T_max=0)', 'tmax0_reader_sft_sol'),
-          ('w/o Reader (one-shot answerer)', 'writer_sft_ep3_req')]
-WRITER = [('ShopMem (Writer + Reader)', FULL), ('w/o SUPERSEDE/EXPIRE', f'writer_abl_add_noop_{FULL}'),
-          ('w/o r_ind', f'writer_abl_no_rind_{FULL}'), ('w/o r_evid', f'writer_abl_no_revid_{FULL}'),
-          ('One-shot answerer: SFT Writer', 'writer_sft_ep3_req'), ('One-shot: w/o SUPERSEDE/EXPIRE', 'writer_abl_add_noop_req'),
-          ('One-shot: w/o r_ind', 'writer_abl_no_rind_req'), ('One-shot: w/o r_evid', 'writer_abl_no_revid_req')]
+READER = [('ShopMem (Writer + Reader)', FULL), ('Standard GRPO (best checkpoint on dev30)', 'grpo_lr1e5_step20'),
+          ('Without GRPO (SFT cold start only)', 'reader_sft_sol'), ('Without follow-up retrieval (SFT Reader, T_max=0)', 'tmax0_reader_sft_sol'),
+          ('Without Reader (single retrieval)', 'writer_sft_ep3_req')]
+WRITER = [('ShopMem (Writer + Reader)', FULL), ('Without SUPERSEDE/EXPIRE', f'writer_abl_add_noop_{FULL}'),
+          ('Without r_ind', f'writer_abl_no_rind_{FULL}'), ('Without r_evid', f'writer_abl_no_revid_{FULL}'),
+          ('Single retrieval: full Writer', 'writer_sft_ep3_req'), ('Single retrieval: without SUPERSEDE/EXPIRE', 'writer_abl_add_noop_req'),
+          ('Single retrieval: without r_ind', 'writer_abl_no_rind_req'), ('Single retrieval: without r_evid', 'writer_abl_no_revid_req')]
 out = Path(sys.argv[1]); out.mkdir(parents=True, exist_ok=True)
 S = lambda r: {x['question_id']: x for x in map(json.loads, open(f'runs/v2test90_K30_{r}/scores.jsonl'))}
 
@@ -63,7 +63,7 @@ for f, spec, refs in (('main.csv', MAIN, lambda r: FULL), ('reader_ablation.csv'
                        'with --select-weight, TIS cap 2, 1 epoch over the GRPO pool (mixed-outcome train questions, 1355)',
     'standard_grpo': 'runs/reader_grpo_lr1e5 (lr 1e-5, beta 0.001, std-normalised advantage, sample 16 -> train 8, no select-weight, no TIS); diverged after ~step 20, best dev30 ckpt step20',
     'notes': ['baselines (v1, RAG, SimpleMem, full context, observation mask, sliding window) are the v2 runs, unchanged',
-              'one-shot answerer = Qwen3-8B (no thinking), reasoning format, as in v2',
+              'single-retrieval answerer = Qwen3-8B (no thinking), reasoning format, as in v2',
               'Writer ablations retrain SFT on ablated data (no_rind/no_revid) or change the write actions (add_noop); '
               'all Writer banks include request units'],
     'script': 'scripts/test90_tables_v3.py'}, indent=1))

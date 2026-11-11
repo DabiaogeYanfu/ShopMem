@@ -3,12 +3,12 @@ results/test90_main/{main.csv, category.csv, ablation.csv, meta.json}. McNemar i
 import csv, json, sys
 from math import comb
 from pathlib import Path
-MAIN = [('ShopMem-Writer (SFT)', 'writer_sft_ep3'), ('ShopMem v1', 'shopmem_v1'), ('RAG hybrid+rerank', 'rag_hybrid_rr'),
+MAIN = [('Writer + single retrieval', 'writer_sft_ep3'), ('ShopMem-Prompt', 'shopmem_v1'), ('RAG hybrid+rerank', 'rag_hybrid_rr'),
         ('RAG hybrid', 'rag_hybrid'), ('RAG dense', 'rag_dense'), ('RAG BM25', 'rag_bm25'), ('SimpleMem', 'simplemem'),
         ('Full context (plain)', 'full_context_plain'), ('Observation mask', 'observation_mask'),
         ('Sliding window', 'sliding_window')]
-ABL = [('SFT', 'writer_sft_ep3'), ('w/o SUPERSEDE/EXPIRE', 'writer_abl_add_noop'), ('w/o r_ind', 'writer_abl_no_rind'),
-       ('w/o r_evid', 'writer_abl_no_revid')]
+ABL = [('SFT', 'writer_sft_ep3'), ('Without SUPERSEDE/EXPIRE', 'writer_abl_add_noop'), ('Without r_ind', 'writer_abl_no_rind'),
+       ('Without r_evid', 'writer_abl_no_revid')]
 out = Path(sys.argv[1]); out.mkdir(parents=True, exist_ok=True)
 S = lambda r: {x['question_id']: x for x in map(json.loads, open(f'runs/v2test90_K30_{r}/scores.jsonl'))}
 ref = S('writer_sft_ep3')
