@@ -1,0 +1,1 @@
+relations: [locatedIn, partOf, usesMaterial, produces, hasState, hasAlarm, hasSymptom, hasCause, hasAction, repairedBy, verifiedBy, precedes, supersedes, contradicts, appliesUnder]

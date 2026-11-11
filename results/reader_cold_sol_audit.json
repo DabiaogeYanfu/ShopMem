@@ -1,0 +1,62 @@
+{
+  "coverage": {
+    "rows": 12480,
+    "unique": 12480,
+    "expected": 12480,
+    "missing": 0,
+    "extra": 0,
+    "duplicated": 0
+  },
+  "first_retrieval_variants": {
+    "1": 3120
+  },
+  "luna_file_duplicates": 0,
+  "verdicts_checked_against_prediction": 12358,
+  "by_source": {
+    "yan": {
+      "n": 1287,
+      "acc": 0.808,
+      "hinted_search": 1,
+      "plain_search": 0.235,
+      "answer_words_median": 47,
+      "steps_mean": 1.75
+    },
+    "micu": {
+      "n": 10869,
+      "acc": 0.812,
+      "hinted_search": 0.996,
+      "plain_search": 0.225,
+      "answer_words_median": 44,
+      "steps_mean": 1.71
+    },
+    "yanredo": {
+      "n": 324,
+      "acc": 0.815,
+      "hinted_search": 1,
+      "plain_search": 0.608,
+      "answer_words_median": 50.0,
+      "steps_mean": 2.05
+    }
+  },
+  "sft": {
+    "train": 2656,
+    "val": 140,
+    "shared_questions": 0,
+    "shared_scenarios": 66
+  },
+  "quarantined_rows": 636,
+  "quarantined_rows_back_in_micu": 1,
+  "yan_tail_keys_all_in_yanredo": true,
+  "issues": {
+    "verdict_text_differs_shared_prediction": {
+      "count": 122,
+      "examples": [
+        "('yan', 'Q_GEN_0017_38', 2)",
+        "('yan', 'Q_GEN_0021_01', 3)",
+        "('yan', 'Q_GEN_0021_04', 1)",
+        "('yan', 'Q_GEN_0022_29', 2)",
+        "('yan', 'Q_GEN_0023_30', 2)"
+      ]
+    }
+  }
+}

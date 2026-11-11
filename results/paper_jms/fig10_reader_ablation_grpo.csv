@@ -1,0 +1,18 @@
+panel,run,step,judge_acc
+a,v2test90_K30_writer_sft_ep3_req,One-shot answer,53.3
+a,v2test90_K30_tmax0_reader_sft_sol,+ Reader ($T_{\max}=0$),74.4
+a,v2test90_K30_reader_sft_sol,+ supplem. retrieval,83.8
+a,v2test90_K30_grpo_stab1_final,+ GRPO,90.9
+b,reader_grpo_stab1,0,84.53
+b,reader_grpo_stab1,10,87.09
+b,reader_grpo_stab1,20,87.86
+b,reader_grpo_stab1,30,89.74
+b,reader_grpo_stab1,40,91.71
+b,reader_grpo_stab1,50,90.51
+b,reader_grpo_stab1,60,92.91
+b,reader_grpo_stab1,65,93.42
+b,reader_grpo_stab1,68,92.99
+b,reader_grpo_lr1e5,0,84.53
+b,reader_grpo_lr1e5,10,87.69
+b,reader_grpo_lr1e5,20,88.89
+b,reader_grpo_lr1e5,30,85.81

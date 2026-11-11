@@ -1,0 +1,5 @@
+method,run,judge_acc,judge_acc_answerable,f1_answerable,context_tokens,memory_entries,sft_only,method_only,mcnemar_p
+SFT,v2test90_K30_writer_sft_ep3,50.7,48.2,41.1,1019,874,0,0,1
+w/o SUPERSEDE/EXPIRE,v2test90_K30_writer_abl_add_noop,49.9,47.3,41.0,1009,1075,300,273,0.28
+w/o r_ind,v2test90_K30_writer_abl_no_rind,49.9,47.3,40.9,936,938,427,400,0.37
+w/o r_evid,v2test90_K30_writer_abl_no_revid,51.7,49.0,40.7,1056,790,351,386,0.21

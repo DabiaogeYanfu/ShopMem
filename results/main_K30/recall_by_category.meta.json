@@ -1,0 +1,10 @@
+{
+  "command": "python -m memeval.figures category --runs runs/main_K30_shopmem runs/main_K30_simplemem runs/main_K30_rag_hybrid_rr runs/main_K30_full_context_plain runs/main_K30_oracle_gate_rag --label main_K30_full_context_plain=Full context --label main_K30_full_context=Full context (reasoning) --label main_K30_rag_hybrid_rr=RAG-hybrid + rerank --label main_K30_sliding_window=Sliding window --label main_K30_oracle_gate_rag=Oracle gate + RAG --metric event_recall --out results/main_K30/recall_by_category",
+  "runs": [
+    "runs/main_K30_shopmem",
+    "runs/main_K30_simplemem",
+    "runs/main_K30_rag_hybrid_rr",
+    "runs/main_K30_full_context_plain",
+    "runs/main_K30_oracle_gate_rag"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "command": "python -m memeval.figures fig05 fig12",
+  "runs": [
+    "data/long/en/test90/K030"
+  ]
+}

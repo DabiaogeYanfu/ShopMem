@@ -1,0 +1,66 @@
+method,category,judge_acc
+ShopMem (Writer + Reader),conditioned_parameter,94.4
+ShopMem (Writer + Reader),constraint_recall,97.8
+ShopMem (Writer + Reader),cross_role_dependency,79.3
+ShopMem (Writer + Reader),failed_intervention,95.9
+ShopMem (Writer + Reader),multi_hop_event,45.9
+ShopMem (Writer + Reader),shift_temporal,95.9
+ShopMem (Writer + Reader),single_hop_fact,94.1
+ShopMem (Writer + Reader),state_tracking,97.8
+ShopMem (Writer + Reader),superseded_fact,94.1
+ShopMem (Writer + Reader),temporal_order,97.4
+ShopMem (Writer + Reader),tool_evidence_recall,93.3
+ShopMem (Writer + Reader),unanswerable,97.8
+ShopMem (Writer + Reader),working_memory_snapshot,97.4
+"w/o stabilised GRPO (standard GRPO, best ckpt)",conditioned_parameter,84.1
+"w/o stabilised GRPO (standard GRPO, best ckpt)",constraint_recall,94.4
+"w/o stabilised GRPO (standard GRPO, best ckpt)",cross_role_dependency,67.0
+"w/o stabilised GRPO (standard GRPO, best ckpt)",failed_intervention,92.6
+"w/o stabilised GRPO (standard GRPO, best ckpt)",multi_hop_event,41.5
+"w/o stabilised GRPO (standard GRPO, best ckpt)",shift_temporal,94.4
+"w/o stabilised GRPO (standard GRPO, best ckpt)",single_hop_fact,95.9
+"w/o stabilised GRPO (standard GRPO, best ckpt)",state_tracking,97.4
+"w/o stabilised GRPO (standard GRPO, best ckpt)",superseded_fact,93.0
+"w/o stabilised GRPO (standard GRPO, best ckpt)",temporal_order,96.3
+"w/o stabilised GRPO (standard GRPO, best ckpt)",tool_evidence_recall,93.3
+"w/o stabilised GRPO (standard GRPO, best ckpt)",unanswerable,95.2
+"w/o stabilised GRPO (standard GRPO, best ckpt)",working_memory_snapshot,95.2
+w/o GRPO (SFT Reader),conditioned_parameter,83.3
+w/o GRPO (SFT Reader),constraint_recall,94.4
+w/o GRPO (SFT Reader),cross_role_dependency,56.7
+w/o GRPO (SFT Reader),failed_intervention,91.1
+w/o GRPO (SFT Reader),multi_hop_event,31.5
+w/o GRPO (SFT Reader),shift_temporal,93.0
+w/o GRPO (SFT Reader),single_hop_fact,82.2
+w/o GRPO (SFT Reader),state_tracking,94.8
+w/o GRPO (SFT Reader),superseded_fact,85.6
+w/o GRPO (SFT Reader),temporal_order,94.8
+w/o GRPO (SFT Reader),tool_evidence_recall,87.0
+w/o GRPO (SFT Reader),unanswerable,97.0
+w/o GRPO (SFT Reader),working_memory_snapshot,97.4
+"w/o search (SFT Reader, T_max=0)",conditioned_parameter,65.2
+"w/o search (SFT Reader, T_max=0)",constraint_recall,98.5
+"w/o search (SFT Reader, T_max=0)",cross_role_dependency,42.2
+"w/o search (SFT Reader, T_max=0)",failed_intervention,87.8
+"w/o search (SFT Reader, T_max=0)",multi_hop_event,10.0
+"w/o search (SFT Reader, T_max=0)",shift_temporal,85.6
+"w/o search (SFT Reader, T_max=0)",single_hop_fact,71.5
+"w/o search (SFT Reader, T_max=0)",state_tracking,81.5
+"w/o search (SFT Reader, T_max=0)",superseded_fact,62.2
+"w/o search (SFT Reader, T_max=0)",temporal_order,90.7
+"w/o search (SFT Reader, T_max=0)",tool_evidence_recall,77.0
+"w/o search (SFT Reader, T_max=0)",unanswerable,98.1
+"w/o search (SFT Reader, T_max=0)",working_memory_snapshot,97.4
+w/o Reader (one-shot answerer),conditioned_parameter,25.2
+w/o Reader (one-shot answerer),constraint_recall,71.1
+w/o Reader (one-shot answerer),cross_role_dependency,37.0
+w/o Reader (one-shot answerer),failed_intervention,59.3
+w/o Reader (one-shot answerer),multi_hop_event,2.6
+w/o Reader (one-shot answerer),shift_temporal,81.5
+w/o Reader (one-shot answerer),single_hop_fact,61.5
+w/o Reader (one-shot answerer),state_tracking,52.6
+w/o Reader (one-shot answerer),superseded_fact,41.5
+w/o Reader (one-shot answerer),temporal_order,72.2
+w/o Reader (one-shot answerer),tool_evidence_recall,54.4
+w/o Reader (one-shot answerer),unanswerable,80.4
+w/o Reader (one-shot answerer),working_memory_snapshot,54.1

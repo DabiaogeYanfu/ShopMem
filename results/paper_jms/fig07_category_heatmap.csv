@@ -1,0 +1,79 @@
+category,method,judge_acc
+constraint_recall,ShopMem,97.8
+constraint_recall,Writer + one-shot,71.1
+constraint_recall,ShopMem-Prompt,73.7
+constraint_recall,RAG hybrid+rerank,82.2
+constraint_recall,SimpleMem,30.7
+constraint_recall,Full context,52.6
+single_hop_fact,ShopMem,94.1
+single_hop_fact,Writer + one-shot,61.5
+single_hop_fact,ShopMem-Prompt,62.2
+single_hop_fact,RAG hybrid+rerank,81.1
+single_hop_fact,SimpleMem,32.6
+single_hop_fact,Full context,42.6
+state_tracking,ShopMem,97.8
+state_tracking,Writer + one-shot,52.6
+state_tracking,ShopMem-Prompt,55.9
+state_tracking,RAG hybrid+rerank,59.6
+state_tracking,SimpleMem,14.8
+state_tracking,Full context,31.5
+tool_evidence_recall,ShopMem,93.3
+tool_evidence_recall,Writer + one-shot,54.4
+tool_evidence_recall,ShopMem-Prompt,50.4
+tool_evidence_recall,RAG hybrid+rerank,34.8
+tool_evidence_recall,SimpleMem,8.1
+tool_evidence_recall,Full context,21.9
+shift_temporal,ShopMem,95.9
+shift_temporal,Writer + one-shot,81.5
+shift_temporal,ShopMem-Prompt,73.7
+shift_temporal,RAG hybrid+rerank,24.1
+shift_temporal,SimpleMem,8.1
+shift_temporal,Full context,5.9
+failed_intervention,ShopMem,95.9
+failed_intervention,Writer + one-shot,59.3
+failed_intervention,ShopMem-Prompt,67.8
+failed_intervention,RAG hybrid+rerank,78.1
+failed_intervention,SimpleMem,24.8
+failed_intervention,Full context,63.0
+temporal_order,ShopMem,97.4
+temporal_order,Writer + one-shot,72.2
+temporal_order,ShopMem-Prompt,67.0
+temporal_order,RAG hybrid+rerank,67.0
+temporal_order,SimpleMem,30.7
+temporal_order,Full context,39.3
+superseded_fact,ShopMem,94.1
+superseded_fact,Writer + one-shot,41.5
+superseded_fact,ShopMem-Prompt,30.7
+superseded_fact,RAG hybrid+rerank,37.8
+superseded_fact,SimpleMem,9.3
+superseded_fact,Full context,26.7
+cross_role_dependency,ShopMem,79.3
+cross_role_dependency,Writer + one-shot,37.0
+cross_role_dependency,ShopMem-Prompt,20.4
+cross_role_dependency,RAG hybrid+rerank,47.4
+cross_role_dependency,SimpleMem,2.6
+cross_role_dependency,Full context,7.4
+working_memory_snapshot,ShopMem,97.4
+working_memory_snapshot,Writer + one-shot,54.1
+working_memory_snapshot,ShopMem-Prompt,7.4
+working_memory_snapshot,RAG hybrid+rerank,8.1
+working_memory_snapshot,SimpleMem,1.9
+working_memory_snapshot,Full context,15.2
+conditioned_parameter,ShopMem,94.4
+conditioned_parameter,Writer + one-shot,25.2
+conditioned_parameter,ShopMem-Prompt,12.2
+conditioned_parameter,RAG hybrid+rerank,8.1
+conditioned_parameter,SimpleMem,1.1
+conditioned_parameter,Full context,3.3
+multi_hop_event,ShopMem,45.9
+multi_hop_event,Writer + one-shot,2.6
+multi_hop_event,ShopMem-Prompt,1.1
+multi_hop_event,RAG hybrid+rerank,0.7
+multi_hop_event,SimpleMem,0.0
+multi_hop_event,Full context,0.7
+unanswerable,ShopMem,97.8
+unanswerable,Writer + one-shot,80.4
+unanswerable,ShopMem-Prompt,84.1
+unanswerable,RAG hybrid+rerank,75.6
+unanswerable,SimpleMem,96.3
+unanswerable,Full context,73.0

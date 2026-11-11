@@ -1,0 +1,23 @@
+{
+  "sampled_writes": 60,
+  "windows": 13,
+  "question_verdicts": 559,
+  "accuracy": {
+    "qwen8b": 0.47048300536672627,
+    "luna": 0.5796064400715564
+  },
+  "verdict_agreement": 0.7906976744186046,
+  "cohen_kappa": 0.585293166528226,
+  "pairs": {
+    "concordant": 49,
+    "discordant": 8,
+    "one_sided": 38,
+    "tie_both": 21
+  },
+  "pairs_separated": 95,
+  "concordant_share": 0.5157894736842106,
+  "discordant_share": 0.08421052631578947,
+  "best_overlap_all_windows": 0.9230769230769231,
+  "best_overlap_informative_windows": 0.9166666666666666,
+  "informative_windows": 12
+}

@@ -1,0 +1,26 @@
+v1     acc  48.2  n 1170
+SFT    acc  52.1  n 1170
+topr1  acc  43.6  n 1170
+s200   acc  53.0  n 1170
+final  acc  50.7  n 1170
+SFT vs s200: SFT-only 119, s200-only 129, p=0.568
+SFT vs final: SFT-only 137, final-only 120, p=0.318
+s200 vs final: s200-only 125, final-only 98, p=0.0814
+v1 vs s200: v1-only 136, s200-only 192, p=0.00234
+category                       v1    SFT  topr1   s200  final
+conditioned_parameter        13.3   16.7   15.6   20.0   13.3
+constraint_recall            76.7   74.4   72.2   72.2   74.4
+cross_role_dependency        24.4    0.0   12.2    0.0    0.0
+failed_intervention          68.9   66.7   75.6   70.0   63.3
+multi_hop_event               0.0    0.0    2.2    3.3    4.4
+shift_temporal               71.1   82.2   72.2   77.8   72.2
+single_hop_fact              70.0   71.1   68.9   68.9   68.9
+state_tracking               61.1   62.2   13.3   66.7   64.4
+superseded_fact              26.7   42.2   37.8   41.1   43.3
+temporal_order               66.7   76.7   66.7   78.9   74.4
+tool_evidence_recall         56.7   58.9   46.7   53.3   46.7
+unanswerable                 83.3   80.0   78.9   82.2   80.0
+working_memory_snapshot       7.8   46.7    4.4   54.4   53.3
+SFT ctx 1012 entries 290 ingest_s 1
+s200 ctx 901 entries 413 ingest_s 1
+final ctx 941 entries 375 ingest_s 1

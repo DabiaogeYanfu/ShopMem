@@ -1,0 +1,40 @@
+{
+ "questions": 3510,
+ "verdicts": {
+  "ok": 2316,
+  "question_ambiguous": 337,
+  "gold_extra": 360,
+  "evidence_mismatch": 93,
+  "gold_wrong": 245,
+  "gold_incomplete": 139,
+  "label_answerability": 20
+ },
+ "major": 811,
+ "major_by_category": {
+  "conditioned_parameter": 113,
+  "constraint_recall": 50,
+  "cross_role_dependency": 124,
+  "failed_intervention": 57,
+  "multi_hop_event": 74,
+  "shift_temporal": 92,
+  "single_hop_fact": 24,
+  "state_tracking": 58,
+  "superseded_fact": 53,
+  "temporal_order": 55,
+  "tool_evidence_recall": 38,
+  "unanswerable": 23,
+  "working_memory_snapshot": 50
+ },
+ "scenarios": 90,
+ "scenario_issues": {
+  "contradiction/major": 32,
+  "incoherent/major": 27,
+  "incoherent/minor": 39,
+  "implausible/major": 11,
+  "contradiction/minor": 12,
+  "role_inconsistency/minor": 4,
+  "implausible/minor": 23,
+  "role_inconsistency/major": 1
+ },
+ "scenarios_with_major_issue": 40
+}

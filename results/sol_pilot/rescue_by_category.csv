@@ -1,0 +1,12 @@
+category,questions,rescued,rescue_rate,traj,correct
+cross_role_dependency,10,0,0.0000,40,1
+multi_hop_event,10,4,0.4000,40,5
+single_hop_fact,10,4,0.4000,40,11
+unanswerable,2,1,0.5000,8,4
+conditioned_parameter,10,7,0.7000,40,23
+shift_temporal,10,7,0.7000,40,27
+temporal_order,7,6,0.8571,28,15
+failed_intervention,10,9,0.9000,40,32
+tool_evidence_recall,10,9,0.9000,40,26
+state_tracking,10,10,1.0000,40,38
+superseded_fact,10,10,1.0000,40,33

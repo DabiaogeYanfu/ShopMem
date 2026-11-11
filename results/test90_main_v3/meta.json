@@ -1,0 +1,13 @@
+{
+ "pool": "test90 (EN, K=30, 3 histories, 3510 questions)",
+ "judge": "gpt-6-luna, per item",
+ "full_method": "SFT Writer ep3 (request units) banks runs/v2test90_K30_writer_sft_ep3_req/banks + Qwen3-8B Reader (sol-SFT cold start + stabilised GRPO runs/reader_grpo_stab1, final adapter = end of 1 epoch, 68 steps), T_max=2",
+ "stabilised_grpo": "lr 1e-5, beta 0.02, advantage without std normalisation (Dr. GRPO), sample 32 -> train 8 per group with --select-weight, TIS cap 2, 1 epoch over the GRPO pool (mixed-outcome train questions, 1355)",
+ "standard_grpo": "runs/reader_grpo_lr1e5 (lr 1e-5, beta 0.001, std-normalised advantage, sample 16 -> train 8, no select-weight, no TIS); diverged after ~step 20, best dev30 ckpt step20",
+ "notes": [
+  "baselines (v1, RAG, SimpleMem, full context, observation mask, sliding window) are the v2 runs, unchanged",
+  "one-shot answerer = Qwen3-8B (no thinking), reasoning format, as in v2",
+  "Writer ablations retrain SFT on ablated data (no_rind/no_revid) or change the write actions (add_noop); all Writer banks include request units"
+ ],
+ "script": "scripts/test90_tables_v3.py"
+}

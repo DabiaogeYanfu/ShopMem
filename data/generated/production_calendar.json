@@ -1,0 +1,40 @@
+{
+  "site_calendar": {
+    "SITE_01": "CAL_3SHIFT",
+    "SITE_02": "CAL_3SHIFT",
+    "SITE_03": "CAL_3SHIFT",
+    "SITE_04": "CAL_2SHIFT",
+    "SITE_05": "CAL_2SHIFT"
+  },
+  "calendars": {
+    "CAL_3SHIFT": [
+      {
+        "shift": "早班",
+        "start": "07:30",
+        "hours": 8
+      },
+      {
+        "shift": "中班",
+        "start": "15:30",
+        "hours": 8
+      },
+      {
+        "shift": "夜班",
+        "start": "23:30",
+        "hours": 8
+      }
+    ],
+    "CAL_2SHIFT": [
+      {
+        "shift": "白班",
+        "start": "08:00",
+        "hours": 12
+      },
+      {
+        "shift": "夜班",
+        "start": "20:00",
+        "hours": 12
+      }
+    ]
+  }
+}

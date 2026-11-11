@@ -1,0 +1,3 @@
+method,turns,windows,ingest_wall_s,ingest_ms_per_turn,write_calls,write_prompt_tokens,write_completion_tokens,write_tokens_per_window,memory_entries,memory_tokens,retrieve_s_median,retrieve_s_p90,context_tokens_mean,questions
+"ShopMem-Writer (SFT, 4B)",1725,163,225.1,130.5,318,820634,42601,5296,295,46906,3.9,5.48,1115,130
+ShopMem v1 (8B prompt),1725,163,168.2,97.5,309,511243,95446,3722,479,74993,4.2,5.71,1161,130

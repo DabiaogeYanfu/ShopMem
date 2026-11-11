@@ -1,0 +1,13 @@
+entity_types:
+  Enterprise: 企业
+  Site: 工厂地点
+  Area: 生产区域
+  WorkCenter: 工作中心
+  WorkUnit: 工作单元
+  Equipment: 设备
+  Component: 部件
+  Product: 产品
+  MaterialLot: 物料批次
+  WorkOrder: 工单
+  Person: 人员
+  QualityTest: 质量检测

@@ -1,0 +1,17 @@
+{
+  "command": "python -m memeval.figures all",
+  "runs": [
+    "runs/v2test90_K1_grpo_stab1_final",
+    "runs/v2test90_K1_rag_hybrid_rr",
+    "runs/v2test90_K1_full_context_plain",
+    "runs/v2test90_K10_grpo_stab1_final",
+    "runs/v2test90_K10_rag_hybrid_rr",
+    "runs/v2test90_K10_full_context_plain",
+    "runs/v2test90_K30_grpo_stab1_final",
+    "runs/v2test90_K30_rag_hybrid_rr",
+    "runs/v2test90_K30_full_context_plain",
+    "runs/v2test90_K90_grpo_stab1_final",
+    "runs/v2test90_K90_rag_hybrid_rr",
+    "runs/v2test90_K90_full_context_plain"
+  ]
+}

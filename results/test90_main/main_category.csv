@@ -1,0 +1,131 @@
+method,category,judge_acc
+ShopMem-Writer (SFT),conditioned_parameter,25.2
+ShopMem-Writer (SFT),constraint_recall,71.1
+ShopMem-Writer (SFT),cross_role_dependency,2.2
+ShopMem-Writer (SFT),failed_intervention,59.3
+ShopMem-Writer (SFT),multi_hop_event,2.6
+ShopMem-Writer (SFT),shift_temporal,81.5
+ShopMem-Writer (SFT),single_hop_fact,61.5
+ShopMem-Writer (SFT),state_tracking,52.6
+ShopMem-Writer (SFT),superseded_fact,41.9
+ShopMem-Writer (SFT),temporal_order,72.2
+ShopMem-Writer (SFT),tool_evidence_recall,54.4
+ShopMem-Writer (SFT),unanswerable,80.4
+ShopMem-Writer (SFT),working_memory_snapshot,54.1
+ShopMem v1,conditioned_parameter,12.2
+ShopMem v1,constraint_recall,73.7
+ShopMem v1,cross_role_dependency,20.4
+ShopMem v1,failed_intervention,67.8
+ShopMem v1,multi_hop_event,1.1
+ShopMem v1,shift_temporal,73.7
+ShopMem v1,single_hop_fact,62.2
+ShopMem v1,state_tracking,55.9
+ShopMem v1,superseded_fact,30.7
+ShopMem v1,temporal_order,67.0
+ShopMem v1,tool_evidence_recall,50.4
+ShopMem v1,unanswerable,84.1
+ShopMem v1,working_memory_snapshot,7.4
+RAG hybrid+rerank,conditioned_parameter,8.1
+RAG hybrid+rerank,constraint_recall,82.2
+RAG hybrid+rerank,cross_role_dependency,47.4
+RAG hybrid+rerank,failed_intervention,78.1
+RAG hybrid+rerank,multi_hop_event,0.7
+RAG hybrid+rerank,shift_temporal,24.1
+RAG hybrid+rerank,single_hop_fact,81.1
+RAG hybrid+rerank,state_tracking,59.6
+RAG hybrid+rerank,superseded_fact,37.8
+RAG hybrid+rerank,temporal_order,67.0
+RAG hybrid+rerank,tool_evidence_recall,34.8
+RAG hybrid+rerank,unanswerable,75.6
+RAG hybrid+rerank,working_memory_snapshot,8.1
+RAG hybrid,conditioned_parameter,10.0
+RAG hybrid,constraint_recall,75.2
+RAG hybrid,cross_role_dependency,17.8
+RAG hybrid,failed_intervention,71.9
+RAG hybrid,multi_hop_event,0.0
+RAG hybrid,shift_temporal,17.0
+RAG hybrid,single_hop_fact,84.1
+RAG hybrid,state_tracking,71.5
+RAG hybrid,superseded_fact,31.9
+RAG hybrid,temporal_order,66.3
+RAG hybrid,tool_evidence_recall,23.7
+RAG hybrid,unanswerable,74.4
+RAG hybrid,working_memory_snapshot,3.3
+RAG dense,conditioned_parameter,0.4
+RAG dense,constraint_recall,77.0
+RAG dense,cross_role_dependency,7.0
+RAG dense,failed_intervention,43.3
+RAG dense,multi_hop_event,0.0
+RAG dense,shift_temporal,13.0
+RAG dense,single_hop_fact,44.4
+RAG dense,state_tracking,67.8
+RAG dense,superseded_fact,9.3
+RAG dense,temporal_order,42.2
+RAG dense,tool_evidence_recall,8.1
+RAG dense,unanswerable,77.4
+RAG dense,working_memory_snapshot,0.0
+RAG BM25,conditioned_parameter,0.4
+RAG BM25,constraint_recall,92.2
+RAG BM25,cross_role_dependency,2.6
+RAG BM25,failed_intervention,20.0
+RAG BM25,multi_hop_event,0.0
+RAG BM25,shift_temporal,15.2
+RAG BM25,single_hop_fact,8.9
+RAG BM25,state_tracking,33.3
+RAG BM25,superseded_fact,0.7
+RAG BM25,temporal_order,59.3
+RAG BM25,tool_evidence_recall,15.6
+RAG BM25,unanswerable,92.2
+RAG BM25,working_memory_snapshot,1.5
+SimpleMem,conditioned_parameter,1.1
+SimpleMem,constraint_recall,30.7
+SimpleMem,cross_role_dependency,2.6
+SimpleMem,failed_intervention,24.8
+SimpleMem,multi_hop_event,0.0
+SimpleMem,shift_temporal,8.1
+SimpleMem,single_hop_fact,32.6
+SimpleMem,state_tracking,14.8
+SimpleMem,superseded_fact,9.3
+SimpleMem,temporal_order,30.7
+SimpleMem,tool_evidence_recall,8.1
+SimpleMem,unanswerable,96.3
+SimpleMem,working_memory_snapshot,1.9
+Full context (plain),conditioned_parameter,3.3
+Full context (plain),constraint_recall,52.6
+Full context (plain),cross_role_dependency,7.4
+Full context (plain),failed_intervention,63.0
+Full context (plain),multi_hop_event,0.7
+Full context (plain),shift_temporal,5.9
+Full context (plain),single_hop_fact,42.6
+Full context (plain),state_tracking,31.5
+Full context (plain),superseded_fact,26.7
+Full context (plain),temporal_order,39.3
+Full context (plain),tool_evidence_recall,21.9
+Full context (plain),unanswerable,73.0
+Full context (plain),working_memory_snapshot,15.2
+Observation mask,conditioned_parameter,5.2
+Observation mask,constraint_recall,51.9
+Observation mask,cross_role_dependency,15.6
+Observation mask,failed_intervention,54.8
+Observation mask,multi_hop_event,0.0
+Observation mask,shift_temporal,5.6
+Observation mask,single_hop_fact,60.7
+Observation mask,state_tracking,44.4
+Observation mask,superseded_fact,26.3
+Observation mask,temporal_order,53.3
+Observation mask,tool_evidence_recall,7.0
+Observation mask,unanswerable,57.4
+Observation mask,working_memory_snapshot,33.3
+Sliding window,conditioned_parameter,0.0
+Sliding window,constraint_recall,0.0
+Sliding window,cross_role_dependency,0.0
+Sliding window,failed_intervention,0.0
+Sliding window,multi_hop_event,0.0
+Sliding window,shift_temporal,0.0
+Sliding window,single_hop_fact,0.0
+Sliding window,state_tracking,0.4
+Sliding window,superseded_fact,0.0
+Sliding window,temporal_order,0.0
+Sliding window,tool_evidence_recall,1.1
+Sliding window,unanswerable,99.6
+Sliding window,working_memory_snapshot,0.0

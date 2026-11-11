@@ -1,0 +1,10 @@
+# evaluation and inference (versions used in the paper)
+openai>=1.0
+numpy
+tiktoken
+matplotlib
+pytest
+# training the Writer / Reader (separate environment was used):
+#   torch==2.13.0  transformers==5.17.0  peft==0.21.0
+# serving local models:
+#   vllm==0.29.0

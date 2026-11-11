@@ -1,0 +1,30 @@
+{
+ "questions": 1080,
+ "verdicts": {
+  "gold_extra": 58,
+  "ok": 823,
+  "question_ambiguous": 114,
+  "gold_wrong": 64,
+  "evidence_mismatch": 19,
+  "gold_incomplete": 1,
+  "label_answerability": 1
+ },
+ "major": 177,
+ "major_by_category": {
+  "shift_temporal": 73,
+  "superseded_fact": 29,
+  "temporal_order": 44,
+  "tool_evidence_recall": 31
+ },
+ "scenarios": 90,
+ "scenario_issues": {
+  "contradiction/major": 25,
+  "incoherent/major": 23,
+  "incoherent/minor": 28,
+  "implausible/minor": 16,
+  "implausible/major": 17,
+  "contradiction/minor": 8,
+  "role_inconsistency/minor": 3
+ },
+ "scenarios_with_major_issue": 29
+}

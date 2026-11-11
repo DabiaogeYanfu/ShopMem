@@ -1,0 +1,12 @@
+{
+  "command": "python make_figure.py",
+  "runs": [
+    "pilot_full_context_K10",
+    "pilot_rag_hybrid_K10",
+    "pilot_rag_dense_K10",
+    "pilot_rag_bm25_K10",
+    "pilot_simplemem_K10",
+    "pilot_full_context_qwen32b_K10",
+    "pilot_full_context_gpt6sol_K10"
+  ]
+}

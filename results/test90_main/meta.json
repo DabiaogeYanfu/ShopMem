@@ -1,0 +1,12 @@
+{
+ "pool": "test90 (EN, K=30, 3 histories, 3510 questions)",
+ "answerer": "Qwen3-8B (no thinking), reasoning format",
+ "judge": "gpt-6-luna, per item",
+ "notes": [
+  "full_context_plain uses max_context_tokens=100000 (tiktoken) ~= 123-127k Qwen3 tokens; the default 120k overflows the 8B 131072 window",
+  "sliding_window budget = 1019 = SFT Writer mean ctx",
+  "SimpleMem: official defaults (db80b6a)",
+  "ablations retrain SFT on ablated data (no_rind/no_revid) or change the write actions (add_noop); their SFT data is 92% / 81% identical to the main SFT set"
+ ],
+ "script": "scripts/test90_tables.py"
+}

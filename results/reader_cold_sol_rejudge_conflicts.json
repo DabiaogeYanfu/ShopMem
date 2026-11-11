@@ -1,0 +1,74 @@
+[
+  {
+    "run": "reader_cold_sol_K20",
+    "question_id": "Q_GEN_0028_01",
+    "sample": 2,
+    "old": true,
+    "votes": [
+      false,
+      false,
+      false
+    ],
+    "correct": false
+  },
+  {
+    "run": "reader_cold_sol_K20",
+    "question_id": "Q_GEN_0028_01",
+    "sample": 3,
+    "old": false,
+    "votes": [
+      false,
+      false,
+      false
+    ],
+    "correct": false
+  },
+  {
+    "run": "reader_cold_sol_K20_micu",
+    "question_id": "Q_GEN_0020_01",
+    "sample": 0,
+    "old": true,
+    "votes": [
+      true,
+      true,
+      false
+    ],
+    "correct": true
+  },
+  {
+    "run": "reader_cold_sol_K20_micu",
+    "question_id": "Q_GEN_0020_01",
+    "sample": 1,
+    "old": false,
+    "votes": [
+      true,
+      true,
+      false
+    ],
+    "correct": true
+  },
+  {
+    "run": "reader_cold_sol_K20_micu",
+    "question_id": "Q_GEN_0066_30",
+    "sample": 2,
+    "old": true,
+    "votes": [
+      true,
+      true,
+      false
+    ],
+    "correct": true
+  },
+  {
+    "run": "reader_cold_sol_K20_micu",
+    "question_id": "Q_GEN_0066_30",
+    "sample": 3,
+    "old": false,
+    "votes": [
+      true,
+      true,
+      false
+    ],
+    "correct": true
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "command": "python -m memeval.figures fig05 fig06 fig10 fig11 fig12 fig13 fig14",
+  "runs": [
+    "results/test90_main_v3/main.csv",
+    "runs/v2test90_K30_grpo_stab1_final",
+    "runs/v2test90_K30_writer_sft_ep3_req",
+    "runs/v2test90_K30_shopmem_v1",
+    "runs/v2test90_K30_rag_hybrid_rr",
+    "runs/v2test90_K30_rag_hybrid",
+    "runs/v2test90_K30_rag_dense",
+    "runs/v2test90_K30_rag_bm25",
+    "runs/v2test90_K30_simplemem",
+    "runs/v2test90_K30_full_context_plain",
+    "runs/v2test90_K30_observation_mask",
+    "runs/v2test90_K30_sliding_window"
+  ]
+}

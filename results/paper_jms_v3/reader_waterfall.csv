@@ -1,0 +1,5 @@
+run,judge_acc,increment
+v2test90_K30_writer_sft_ep3_req,53.3,53.3
+v2test90_K30_tmax0_reader_sft_sol,74.4,21.1
+v2test90_K30_reader_sft_sol,83.8,9.4
+v2test90_K30_grpo_stab1_final,90.9,7.1

@@ -1,0 +1,7 @@
+{
+  "command": "python -m memeval.figures all",
+  "runs": [
+    "results/test90_main_v3/writer_ablation_category.csv",
+    "results/test90_main_v3/writer_ablation.csv"
+  ]
+}

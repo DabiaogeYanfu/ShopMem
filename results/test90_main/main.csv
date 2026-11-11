@@ -1,0 +1,11 @@
+method,run,judge_acc,judge_acc_answerable,f1_answerable,context_tokens,memory_entries,sft_only,method_only,mcnemar_p
+ShopMem-Writer (SFT),v2test90_K30_writer_sft_ep3,50.7,48.2,41.1,1019,874,0,0,1
+ShopMem v1,v2test90_K30_shopmem_v1,46.7,43.5,41.9,1171,1385,611,470,2e-05
+RAG hybrid+rerank,v2test90_K30_rag_hybrid_rr,46.5,44.1,44.4,818,6779,721,575,5.5e-05
+RAG hybrid,v2test90_K30_rag_hybrid,42.1,39.4,43.8,802,5054,771,469,8.7e-18
+RAG dense,v2test90_K30_rag_dense,30.0,26.0,36.8,763,5054,1008,282,5.6e-96
+RAG BM25,v2test90_K30_rag_bm25,26.3,20.8,30.1,817,5054,1077,221,2.3e-135
+SimpleMem,v2test90_K30_simplemem,20.1,13.7,25.1,3811,979,1253,179,1.3e-198
+Full context (plain),v2test90_K30_full_context_plain,29.5,25.8,30.8,98964,3713,1076,331,4.6e-92
+Observation mask,v2test90_K30_observation_mask,32.0,29.8,44.7,74093,4213,1035,378,8.3e-71
+Sliding window,v2test90_K30_sliding_window,7.8,0.1,8.1,994,32,1561,55,0

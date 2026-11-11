@@ -1,0 +1,295 @@
+{
+ "stats": {
+  "train": {
+   "scenarios": 80,
+   "domains": {
+    "maintenance": 20,
+    "quality": 20,
+    "process": 20,
+    "logistics": 20
+   },
+   "sites": {
+    "SITE_02": 16,
+    "SITE_03": 16,
+    "SITE_04": 16,
+    "SITE_05": 16,
+    "SITE_01": 16
+   },
+   "sessions": 400,
+   "turns_per_scenario": 56.83,
+   "chars_per_scenario": 6462.2,
+   "low_density_ratio": 0.736,
+   "low_density_by_type": {
+    "agent_response": 0.252,
+    "agent_think": 1.0,
+    "agent_tool_call": 1.0,
+    "human": 0.757,
+    "tool_call": 1.0,
+    "tool_observation": 0.667,
+    "user_query": 0.0
+   },
+   "turns_with_resolved_time": 280,
+   "turns_with_resolved_shift": 255,
+   "session_start_shift": {
+    "夜班": 153,
+    "中班": 67,
+    "早班": 89,
+    "白班": 91
+   },
+   "questions": 3120,
+   "questions_by_category": {
+    "single_hop_fact": 240,
+    "temporal_order": 240,
+    "state_tracking": 240,
+    "failed_intervention": 240,
+    "cross_role_dependency": 240,
+    "working_memory_snapshot": 240,
+    "constraint_recall": 240,
+    "superseded_fact": 240,
+    "multi_hop_event": 240,
+    "conditioned_parameter": 240,
+    "tool_evidence_recall": 240,
+    "shift_temporal": 240,
+    "unanswerable": 240
+   },
+   "evidence_per_answerable_q": 8.583,
+   "duplicate_question_strings": 0,
+   "distinct_masked_turn_templates": 1614,
+   "turn_template_seen_in_train": 1.0,
+   "question_template_seen_in_train": 1.0
+  },
+  "dev": {
+   "scenarios": 10,
+   "domains": {
+    "maintenance": 3,
+    "quality": 3,
+    "process": 2,
+    "logistics": 2
+   },
+   "sites": {
+    "SITE_02": 2,
+    "SITE_03": 2,
+    "SITE_04": 2,
+    "SITE_05": 2,
+    "SITE_01": 2
+   },
+   "sessions": 50,
+   "turns_per_scenario": 57.4,
+   "chars_per_scenario": 6932.8,
+   "low_density_ratio": 0.7387,
+   "low_density_by_type": {
+    "agent_response": 0.13,
+    "agent_think": 1.0,
+    "agent_tool_call": 1.0,
+    "human": 0.739,
+    "tool_call": 1.0,
+    "tool_observation": 0.692,
+    "user_query": 0.0
+   },
+   "turns_with_resolved_time": 40,
+   "turns_with_resolved_shift": 35,
+   "session_start_shift": {
+    "中班": 10,
+    "早班": 8,
+    "夜班": 19,
+    "白班": 13
+   },
+   "questions": 390,
+   "questions_by_category": {
+    "single_hop_fact": 30,
+    "temporal_order": 30,
+    "state_tracking": 30,
+    "failed_intervention": 30,
+    "cross_role_dependency": 30,
+    "working_memory_snapshot": 30,
+    "constraint_recall": 30,
+    "superseded_fact": 30,
+    "multi_hop_event": 30,
+    "conditioned_parameter": 30,
+    "tool_evidence_recall": 30,
+    "shift_temporal": 30,
+    "unanswerable": 30
+   },
+   "evidence_per_answerable_q": 8.583,
+   "duplicate_question_strings": 0,
+   "distinct_masked_turn_templates": 337,
+   "turn_template_seen_in_train": 0.7108,
+   "question_template_seen_in_train": 0.9949
+  },
+  "test": {
+   "scenarios": 10,
+   "domains": {
+    "process": 3,
+    "logistics": 3,
+    "maintenance": 2,
+    "quality": 2
+   },
+   "sites": {
+    "SITE_02": 2,
+    "SITE_03": 2,
+    "SITE_04": 2,
+    "SITE_05": 2,
+    "SITE_01": 2
+   },
+   "sessions": 50,
+   "turns_per_scenario": 53.6,
+   "chars_per_scenario": 5926.3,
+   "low_density_ratio": 0.7201,
+   "low_density_by_type": {
+    "agent_response": 0.231,
+    "agent_think": 1.0,
+    "agent_tool_call": 1.0,
+    "human": 0.754,
+    "tool_call": 1.0,
+    "tool_observation": 0.636,
+    "user_query": 0.0
+   },
+   "turns_with_resolved_time": 33,
+   "turns_with_resolved_shift": 31,
+   "session_start_shift": {
+    "中班": 11,
+    "早班": 11,
+    "夜班": 19,
+    "白班": 9
+   },
+   "questions": 390,
+   "questions_by_category": {
+    "single_hop_fact": 30,
+    "temporal_order": 30,
+    "state_tracking": 30,
+    "failed_intervention": 30,
+    "cross_role_dependency": 30,
+    "working_memory_snapshot": 30,
+    "constraint_recall": 30,
+    "superseded_fact": 30,
+    "multi_hop_event": 30,
+    "conditioned_parameter": 30,
+    "tool_evidence_recall": 30,
+    "shift_temporal": 30,
+    "unanswerable": 30
+   },
+   "evidence_per_answerable_q": 8.583,
+   "duplicate_question_strings": 0,
+   "distinct_masked_turn_templates": 313,
+   "turn_template_seen_in_train": 0.7164,
+   "question_template_seen_in_train": 0.9949
+  },
+  "dev_ext": {
+   "scenarios": 20,
+   "domains": {
+    "maintenance": 5,
+    "quality": 5,
+    "process": 5,
+    "logistics": 5
+   },
+   "sites": {
+    "SITE_02": 4,
+    "SITE_03": 4,
+    "SITE_04": 4,
+    "SITE_05": 4,
+    "SITE_01": 4
+   },
+   "sessions": 100,
+   "turns_per_scenario": 53.9,
+   "chars_per_scenario": 6029.9,
+   "low_density_ratio": 0.7217,
+   "low_density_by_type": {
+    "agent_response": 0.192,
+    "agent_think": 1.0,
+    "agent_tool_call": 1.0,
+    "human": 0.74,
+    "tool_call": 1.0,
+    "tool_observation": 0.64,
+    "user_query": 0.0
+   },
+   "turns_with_resolved_time": 63,
+   "turns_with_resolved_shift": 61,
+   "session_start_shift": {
+    "中班": 26,
+    "早班": 19,
+    "夜班": 40,
+    "白班": 15
+   },
+   "questions": 780,
+   "questions_by_category": {
+    "single_hop_fact": 60,
+    "temporal_order": 60,
+    "state_tracking": 60,
+    "failed_intervention": 60,
+    "cross_role_dependency": 60,
+    "working_memory_snapshot": 60,
+    "constraint_recall": 60,
+    "superseded_fact": 60,
+    "multi_hop_event": 60,
+    "conditioned_parameter": 60,
+    "tool_evidence_recall": 60,
+    "shift_temporal": 60,
+    "unanswerable": 60
+   },
+   "evidence_per_answerable_q": 8.583,
+   "duplicate_question_strings": 0,
+   "distinct_masked_turn_templates": 532,
+   "turn_template_seen_in_train": 0.7245,
+   "question_template_seen_in_train": 0.9962
+  },
+  "test_ext": {
+   "scenarios": 80,
+   "domains": {
+    "maintenance": 20,
+    "quality": 20,
+    "process": 20,
+    "logistics": 20
+   },
+   "sites": {
+    "SITE_02": 16,
+    "SITE_03": 16,
+    "SITE_04": 16,
+    "SITE_05": 16,
+    "SITE_01": 16
+   },
+   "sessions": 400,
+   "turns_per_scenario": 56.3,
+   "chars_per_scenario": 6410.1,
+   "low_density_ratio": 0.7336,
+   "low_density_by_type": {
+    "agent_response": 0.24,
+    "agent_think": 1.0,
+    "agent_tool_call": 1.0,
+    "human": 0.751,
+    "tool_call": 1.0,
+    "tool_observation": 0.665,
+    "user_query": 0.0
+   },
+   "turns_with_resolved_time": 271,
+   "turns_with_resolved_shift": 257,
+   "session_start_shift": {
+    "早班": 85,
+    "中班": 85,
+    "夜班": 150,
+    "白班": 80
+   },
+   "questions": 3120,
+   "questions_by_category": {
+    "single_hop_fact": 240,
+    "temporal_order": 240,
+    "state_tracking": 240,
+    "failed_intervention": 240,
+    "cross_role_dependency": 240,
+    "working_memory_snapshot": 240,
+    "constraint_recall": 240,
+    "superseded_fact": 240,
+    "multi_hop_event": 240,
+    "conditioned_parameter": 240,
+    "tool_evidence_recall": 240,
+    "shift_temporal": 240,
+    "unanswerable": 240
+   },
+   "evidence_per_answerable_q": 8.583,
+   "duplicate_question_strings": 0,
+   "distinct_masked_turn_templates": 1604,
+   "turn_template_seen_in_train": 0.7227,
+   "question_template_seen_in_train": 0.9978
+  }
+ },
+ "errors": {}
+}

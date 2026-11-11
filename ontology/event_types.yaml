@@ -1,0 +1,13 @@
+event_types:
+  - alarm
+  - symptom_observed
+  - diagnosis_hypothesis
+  - inspection
+  - component_replacement
+  - parameter_adjustment
+  - production_pause
+  - restart
+  - quality_defect
+  - containment
+  - verification
+  - procedure_update

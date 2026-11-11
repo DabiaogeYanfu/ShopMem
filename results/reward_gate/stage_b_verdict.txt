@@ -1,0 +1,19 @@
+category                   slots hit_split mem_split  P(hit) P(c|hit) P(c|miss)   dslot
+conditioned_parameter        240      0.04      0.00    0.20     0.63      0.53    0.36
+constraint_recall            240      0.01      0.00    1.00     0.94      0.00    1.00
+cross_role_dependency        240      0.06      0.00    0.21     0.02      0.03   -0.02
+failed_intervention          240      0.03      0.00    0.11     0.86      0.81   -0.04
+multi_hop_event              240      0.03      0.00    0.20     0.62      0.01    0.56
+shift_temporal               240      0.01      0.00    1.00     0.87      0.00    0.78
+single_hop_fact              240      0.00      0.00    1.00     0.73        -       - 
+state_tracking               240      0.03      0.00    1.00     0.50      0.00    0.31
+superseded_fact              240      0.02      0.00    0.03     0.51      0.52   -0.24
+temporal_order               240      0.04      0.00    0.26     0.85      0.82    0.04
+tool_evidence_recall         240      0.00      0.00    1.00     0.78        -       - 
+working_memory_snapshot      240      0.00      0.00    0.00       -       0.83      - 
+
+qa windows 321, samples 3210; slots with hit/miss split 64
+flat windows under event in-memory reward: 1.00
+G1 validity  dP(correct) within slot = 0.182  (>= .15)  -> PASS
+G2 signal    flat qa windows        = 0.75   (<= .30)  -> FAIL
+G3 weak cats min split share        = 0.03   (>= .30)  -> FAIL

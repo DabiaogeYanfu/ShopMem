@@ -1,0 +1,17 @@
+{
+  "command": "python -m memeval.figures curve --runs runs/v2test90_K1_grpo_stab1_final runs/v2test90_K10_grpo_stab1_final runs/v2test90_K30_grpo_stab1_final runs/v2test90_K90_grpo_stab1_final runs/v2test90_K1_rag_hybrid_rr runs/v2test90_K10_rag_hybrid_rr runs/v2test90_K30_rag_hybrid_rr runs/v2test90_K90_rag_hybrid_rr runs/v2test90_K1_full_context_plain runs/v2test90_K10_full_context_plain runs/v2test90_K30_full_context_plain runs/v2test90_K90_full_context_plain --x K --logx --metric judge_acc_micro --xlabel Scenarios interleaved per history, K (log scale) --label runs/v2test90_K30_grpo_stab1_final=ShopMem (ours) --label runs/v2test90_K30_rag_hybrid_rr=RAG hybrid+rerank --label runs/v2test90_K30_full_context_plain=Full context --hollow runs/v2test90_K30_full_context_plain runs/v2test90_K90_full_context_plain --hollow-label Context truncated to 100k tokens --out results/kcurve/acc_vs_K",
+  "runs": [
+    "runs/v2test90_K1_grpo_stab1_final",
+    "runs/v2test90_K10_grpo_stab1_final",
+    "runs/v2test90_K30_grpo_stab1_final",
+    "runs/v2test90_K90_grpo_stab1_final",
+    "runs/v2test90_K1_rag_hybrid_rr",
+    "runs/v2test90_K10_rag_hybrid_rr",
+    "runs/v2test90_K30_rag_hybrid_rr",
+    "runs/v2test90_K90_rag_hybrid_rr",
+    "runs/v2test90_K1_full_context_plain",
+    "runs/v2test90_K10_full_context_plain",
+    "runs/v2test90_K30_full_context_plain",
+    "runs/v2test90_K90_full_context_plain"
+  ]
+}

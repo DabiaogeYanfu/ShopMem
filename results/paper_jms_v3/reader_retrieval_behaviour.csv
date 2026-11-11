@@ -1,0 +1,14 @@
+category,sft_supplementary,grpo_supplementary,sft_eta1,grpo_eta1
+working_memory_snapshot,65.19,92.59,0.37,0.74
+state_tracking,25.93,74.44,6.67,19.26
+multi_hop_event,97.78,99.63,97.78,99.63
+conditioned_parameter,69.63,98.89,69.63,98.89
+unanswerable,99.26,100.0,94.81,97.41
+cross_role_dependency,55.56,97.04,55.56,97.04
+superseded_fact,50.74,90.74,50.74,90.74
+temporal_order,41.85,87.04,41.85,87.04
+tool_evidence_recall,54.07,83.33,54.07,83.33
+single_hop_fact,15.93,76.3,15.93,76.3
+constraint_recall,20.37,70.74,20.37,70.74
+failed_intervention,17.04,63.7,17.04,63.7
+shift_temporal,27.78,55.56,27.78,55.56

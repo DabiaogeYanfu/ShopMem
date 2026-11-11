@@ -1,0 +1,6 @@
+{
+  "command": "python -m memeval.figures topr --run runs/topr1c_writer --out results/topr1c_writer/topr_curve",
+  "runs": [
+    "runs/topr1c_writer"
+  ]
+}

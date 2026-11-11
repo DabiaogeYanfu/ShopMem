@@ -1,0 +1,16 @@
+category                     n greedy mean@8 pass@8  mixed search
+conditioned_parameter       23   21.7   23.4   43.5   39.1   0.11
+constraint_recall           23   87.0   79.9   91.3   47.8   0.13
+cross_role_dependency       23    0.0    0.0    0.0    0.0   0.00
+failed_intervention         23   60.9   61.4   91.3   78.3   0.01
+multi_hop_event             23    0.0    4.9   17.4   17.4   0.23
+shift_temporal              23   78.3   82.1   91.3   21.7   0.03
+single_hop_fact             23   65.2   62.0   82.6   47.8   0.00
+state_tracking              23   60.9   65.8   87.0   56.5   0.00
+superseded_fact             23   47.8   37.0   56.5   43.5   0.12
+temporal_order              23   78.3   80.4  100.0   43.5   0.01
+tool_evidence_recall        23   56.5   51.1   73.9   56.5   0.10
+unanswerable                23   91.3   99.5  100.0    4.3   0.02
+working_memory_snapshot     23   60.9   50.5   91.3   73.9   0.08
+ALL                        299   54.5   53.7   71.2   40.8
+gate: mixed share 0.41 (>= .30 -> PASS)  PASS

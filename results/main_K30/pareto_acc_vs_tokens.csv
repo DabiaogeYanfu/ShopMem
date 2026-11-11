@@ -1,0 +1,12 @@
+method,label,run,context_tokens_mean,judge_acc_macro
+shopmem,ShopMem (ours),main_K30_shopmem,612.5,40.8
+rag_hybrid,RAG-hybrid + rerank,main_K30_rag_hybrid_rr,700.4,38.49
+rag_hybrid,RAG-hybrid,main_K30_rag_hybrid,707.6,37.44
+rag_dense,RAG-dense,main_K30_rag_dense,757.4,34.13
+rag_bm25,RAG-BM25,main_K30_rag_bm25,705.3,25.38
+full_context,Full context,main_K30_full_context_plain,70009.3,34.02
+full_context,Full context (reasoning),main_K30_full_context,70009.3,28.35
+observation_mask,Obs. mask,main_K30_observation_mask,48649.7,27.26
+sliding_window,Sliding window,main_K30_sliding_window,596,7.92
+simplemem,SimpleMem,main_K30_simplemem,2798.4,12.19
+oracle_gate_rag,Oracle gate + RAG,main_K30_oracle_gate_rag,748.8,37.98

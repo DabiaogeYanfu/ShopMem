@@ -1,0 +1,1 @@
+states: [Normal, Alarmed, UnderInvestigation, UnderMaintenance, TemporarilyRecovered, Verified, Recurred, Quarantined, Released, Superseded, Unknown]

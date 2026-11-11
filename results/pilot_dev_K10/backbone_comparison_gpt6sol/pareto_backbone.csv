@@ -1,0 +1,8 @@
+label,run,context_tokens_mean,judge_acc_macro
+full_context (Qwen3-8B),pilot_full_context_K10,24509,38.46
+rag_hybrid (Qwen3-8B),pilot_rag_hybrid_K10,691.9,32.31
+rag_dense (Qwen3-8B),pilot_rag_dense_K10,714.2,23.08
+rag_bm25 (Qwen3-8B),pilot_rag_bm25_K10,694.3,21.54
+simplemem (Qwen3-8B),pilot_simplemem_K10,2155.0,7.69
+"full_context (Qwen3-32B, local)",pilot_full_context_qwen32b_K10,24509,43.08
+"full_context (gpt-6-sol, API)",pilot_full_context_gpt6sol_K10,24509,63.08

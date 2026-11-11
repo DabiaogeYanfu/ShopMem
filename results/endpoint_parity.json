@@ -1,0 +1,91 @@
+{
+  "questions": 39,
+  "trajectories": 156,
+  "acc_yan": 0.7821,
+  "acc_micu": 0.7949,
+  "acc_diff_micu_minus_yan": 0.0128,
+  "diff_95ci": [
+    -0.0385,
+    0.0641
+  ],
+  "questions_better_on": {
+    "yan": 3,
+    "micu": 4,
+    "tie": 32
+  },
+  "format_ok": {
+    "yan": 156,
+    "micu": 156
+  },
+  "hinted_searched": {
+    "yan": 78,
+    "micu": 78,
+    "of": 78
+  },
+  "plain_searched": {
+    "yan": 18,
+    "micu": 18
+  },
+  "pred_words_median": {
+    "yan": 45.0,
+    "micu": 41.5
+  },
+  "prompt_tokens_per_traj_median": {
+    "yan": 3588.5,
+    "micu": 3619.0
+  },
+  "by_category": {
+    "conditioned_parameter": {
+      "yan": 1,
+      "micu": 0.83
+    },
+    "constraint_recall": {
+      "yan": 0.83,
+      "micu": 0.75
+    },
+    "cross_role_dependency": {
+      "yan": 0,
+      "micu": 0
+    },
+    "failed_intervention": {
+      "yan": 1,
+      "micu": 1
+    },
+    "multi_hop_event": {
+      "yan": 0.17,
+      "micu": 0.25
+    },
+    "shift_temporal": {
+      "yan": 0.83,
+      "micu": 0.83
+    },
+    "single_hop_fact": {
+      "yan": 0.92,
+      "micu": 0.92
+    },
+    "state_tracking": {
+      "yan": 1,
+      "micu": 1
+    },
+    "superseded_fact": {
+      "yan": 0.58,
+      "micu": 0.75
+    },
+    "temporal_order": {
+      "yan": 1,
+      "micu": 1
+    },
+    "tool_evidence_recall": {
+      "yan": 1,
+      "micu": 1
+    },
+    "unanswerable": {
+      "yan": 0.83,
+      "micu": 1
+    },
+    "working_memory_snapshot": {
+      "yan": 1,
+      "micu": 1
+    }
+  }
+}

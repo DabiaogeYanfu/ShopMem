@@ -1,0 +1,13 @@
+series,K,judge_acc_micro,turn_recall,context_tokens_mean
+ShopMem,1,90.77,67.41,1761.03
+ShopMem,10,91.48,67.27,1974.69
+ShopMem,30,90.85,66.67,2092.41
+ShopMem,90,88.58,65.59,2263.18
+RAG hybrid+rerank,1,50.23,57.76,844.36
+RAG hybrid+rerank,10,48.92,53.97,839.19
+RAG hybrid+rerank,30,46.52,47.94,817.75
+RAG hybrid+rerank,90,42.71,39.06,789.43
+Full context,1,58.58,100.0,4483.96
+Full context,10,39.49,100.0,44839.56
+Full context,30,29.46,73.6,98963.67
+Full context,90,17.07,24.0,99072

@@ -1,0 +1,22 @@
+{
+  "windows": 158,
+  "roles": {
+    "qa": 120,
+    "evidence": 30,
+    "noop": 8
+  },
+  "questions": 1170,
+  "attached": 1080,
+  "unattached": 90,
+  "unattached_categories": {
+    "unanswerable": 90
+  },
+  "questions_per_qa_window": {
+    "1": 30,
+    "5": 60,
+    "25": 30
+  },
+  "turns_low_density_share": 0.7373029772329247,
+  "window_size": 16,
+  "overlap": 2
+}

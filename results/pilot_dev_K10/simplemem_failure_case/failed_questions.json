@@ -1,0 +1,572 @@
+[
+  {
+    "question_id": "Q_GEN_0081_02",
+    "category": "temporal_order",
+    "answerable": true,
+    "question": "关于X6132-M3-081，先做的是哪项措施，后做的是哪项？",
+    "reference": "第一次处置措施（调整X6132-M3-081的参数后短暂恢复，随后再次出现问题）发生在先，随后生效的处置措施（更换温度传感器#081后设备恢复，等待连续运行验证）发生在后。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称没有相关信息，未回答金标准所述先调整参数、后更换温度传感器#081的处置顺序。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2256,
+    "meta": {
+      "entries": 33,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_07",
+    "category": "constraint_recall",
+    "answerable": true,
+    "question": "WO_0081现在有哪些限制条件？",
+    "reference": "X6132-M3-081验证完成前不得关闭任务WO_0081；不得再次采用已失败的调整方案",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未说明金答案中的两项限制条件。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2064,
+    "meta": {
+      "entries": 30,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_03",
+    "category": "state_tracking",
+    "answerable": true,
+    "question": "X6132-M3-081目前最新的状态记录是什么？",
+    "reference": "X6132-M3-081连续运行验证通过，任务WO_0081可以关闭。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称没有相关历史记录，未提供且否定了验证通过、任务可关闭的最新状态。\",\"label\":\"WRONG\"}",
+    "context_tokens": 1826,
+    "meta": {
+      "entries": 27,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_01",
+    "category": "single_hop_fact",
+    "answerable": true,
+    "question": "关于X6132-M3-081，最早记录的情况是什么？",
+    "reference": "X6132-M3-081出现设备报警ALARM_281。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"金标准指出X6132-M3-081最早记录出现设备报警ALARM_281，生成答案却称没有相关信息。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2335,
+    "meta": {
+      "entries": 34,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_04",
+    "category": "failed_intervention",
+    "answerable": true,
+    "question": "X6132-M3-081哪项干预曾失败并导致问题复发？",
+    "reference": "调整X6132-M3-081的参数后短暂恢复，随后再次出现问题。后来通过“更换温度传感器#081后设备恢复，等待连续运行验证”才得到解决。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"答案声称没有相关信息，未指出调整X6132-M3-081参数后问题复发这一干预。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2198,
+    "meta": {
+      "entries": 32,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_10",
+    "category": "conditioned_parameter",
+    "answerable": true,
+    "question": "在任务WO_0081期间，针对X6132-M3-081采取过哪些调整或处置措施？",
+    "reference": "针对X6132-M3-081采取的处置措施包括：调整X6132-M3-081的参数后短暂恢复，随后再次出现问题；随后更换温度传感器#081后设备恢复，等待连续运行验证。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称没有相关信息，未提及参数调整后短暂恢复、再次出现问题以及更换温度传感器后恢复并等待连续运行验证等处置措施。\",\"label\":\"WRONG\"}",
+    "context_tokens": 1941,
+    "meta": {
+      "entries": 28,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_05",
+    "category": "cross_role_dependency",
+    "answerable": true,
+    "question": "关于X6132-M3-081，前线人员和工程师之间的信息是如何传递的？",
+    "reference": "一线人员先报告：X6132-M3-081出现设备报警ALARM_281。随后负责工程师介入处理并验证：X6132-M3-081连续运行验证通过，任务WO_0081可以关闭。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，但金标准明确说明一线人员报告了设备报警，随后工程师验证通过并确认任务可关闭。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2206,
+    "meta": {
+      "entries": 32,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_08",
+    "category": "superseded_fact",
+    "answerable": true,
+    "question": "X6132-M3-081哪个早期假设后来被证明是错的？",
+    "reference": "最初的判断/措施是“调整X6132-M3-081的参数后短暂恢复，随后再次出现问题”，后来被更新为“更换温度传感器#081后设备恢复，等待连续运行验证”。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未指出早期假设及其后来被更新的结论。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2058,
+    "meta": {
+      "entries": 30,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_09",
+    "category": "multi_hop_event",
+    "answerable": true,
+    "question": "能按顺序讲一下X6132-M3-081的整个处理过程吗？",
+    "reference": "X6132-M3-081出现设备报警ALARM_281；初步检查后怀疑部件温度传感器#081，但尚未确认；调整X6132-M3-081的参数后短暂恢复，随后再次出现问题；更换温度传感器#081后设备恢复，等待连续运行验证；X6132-M3-081连续运行验证通过，任务WO_0081可以关闭。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称没有相关历史记录，未提供金标中的处理过程。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2239,
+    "meta": {
+      "entries": 33,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_06",
+    "category": "working_memory_snapshot",
+    "answerable": true,
+    "question": "到目前为止，WO_0081保留了哪些关键信息？",
+    "reference": "有效事实：更换温度传感器#081后设备恢复，等待连续运行验证。；X6132-M3-081连续运行验证通过，任务WO_0081可以关闭。 待办：归档WO_0081的处置记录。约束：X6132-M3-081验证完成前不得关闭任务WO_0081；不得再次采用已失败的调整方案。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称没有相关信息，但金答案明确记录了传感器更换后的恢复、连续运行验证通过、归档待办及关闭约束。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2210,
+    "meta": {
+      "entries": 32,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_12",
+    "category": "shift_temporal",
+    "answerable": true,
+    "question": "X6132-M3-081最初的问题是在哪个班次发生的？",
+    "reference": "2026-02-02 中班（15:30–23:30）",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"The generated answer does not identify the shift, while the gold answer is the 2026-02-02 afternoon shift.\",\"label\":\"WRONG\"}",
+    "context_tokens": 2107,
+    "meta": {
+      "entries": 31,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_11",
+    "category": "tool_evidence_recall",
+    "answerable": true,
+    "question": "在X6132-M3-081的有效干预被确认这一步，Agent依据的证据是什么？",
+    "reference": "temperature_query返回：更换温度传感器#081后X6132-M3-081主轴温度稳定在58°C，较更换前82°C明显下降，检测时间13:33。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未提供金答案所述温度传感器更换后温度稳定在58°C、较更换前82°C下降的证据。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2139,
+    "meta": {
+      "entries": 31,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_14",
+    "category": "single_hop_fact",
+    "answerable": true,
+    "question": "X6132-M3-081最初出现的异常是什么？",
+    "reference": "X6132-M3-081出现设备报警ALARM_281。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未回答设备报警 ALARM_281，与金标准所述异常不符。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2116,
+    "meta": {
+      "entries": 31,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_15",
+    "category": "temporal_order",
+    "answerable": true,
+    "question": "X6132-M3-081这次问题处理，两项措施的先后顺序是什么？",
+    "reference": "第一次处置措施（调整X6132-M3-081的参数后短暂恢复，随后再次出现问题）发生在先，随后生效的处置措施（更换温度传感器#081后设备恢复，等待连续运行验证）发生在后。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未给出金标准要求的两项措施顺序。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2135,
+    "meta": {
+      "entries": 31,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_20",
+    "category": "constraint_recall",
+    "answerable": true,
+    "question": "WO_0081当前的约束条件有哪些？",
+    "reference": "X6132-M3-081验证完成前不得关闭任务WO_0081；不得再次采用已失败的调整方案",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未给出金答案要求的两项约束：验证完成前不得关闭任务，以及不得再次采用已失败的调整方案。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2064,
+    "meta": {
+      "entries": 30,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_16",
+    "category": "state_tracking",
+    "answerable": true,
+    "question": "截至目前，X6132-M3-081的最新状态如何？",
+    "reference": "X6132-M3-081连续运行验证通过，任务WO_0081可以关闭。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未提供金答案所述连续运行验证通过且任务WO_0081可以关闭的最新状态。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2185,
+    "meta": {
+      "entries": 32,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_19",
+    "category": "working_memory_snapshot",
+    "answerable": true,
+    "question": "WO_0081目前的活跃事实和待办有哪些？",
+    "reference": "有效事实：更换温度传感器#081后设备恢复，等待连续运行验证。；X6132-M3-081连续运行验证通过，任务WO_0081可以关闭。 待办：归档WO_0081的处置记录。约束：X6132-M3-081验证完成前不得关闭任务WO_0081；不得再次采用已失败的调整方案。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未提供金答案要求的有效事实、待办和约束。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2122,
+    "meta": {
+      "entries": 31,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_17",
+    "category": "failed_intervention",
+    "answerable": true,
+    "question": "X6132-M3-081处理过程中，哪个措施没有生效？",
+    "reference": "调整X6132-M3-081的参数后短暂恢复，随后再次出现问题。后来通过“更换温度传感器#081后设备恢复，等待连续运行验证”才得到解决。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"答案称没有相关信息，未指出调整参数后仅短暂恢复、问题随后复发这一未能奏效的措施。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2037,
+    "meta": {
+      "entries": 30,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_21",
+    "category": "superseded_fact",
+    "answerable": true,
+    "question": "X6132-M3-081的诊断结论后来发生了什么变化？",
+    "reference": "最初的判断/措施是“调整X6132-M3-081的参数后短暂恢复，随后再次出现问题”，后来被更新为“更换温度传感器#081后设备恢复，等待连续运行验证”。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称没有相关信息，未说明诊断结论从参数调整后短暂恢复并再次出问题，更新为更换温度传感器后恢复并等待连续运行验证。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2226,
+    "meta": {
+      "entries": 32,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_18",
+    "category": "cross_role_dependency",
+    "answerable": true,
+    "question": "X6132-M3-081的问题处理中，不同角色之间是怎么配合的？",
+    "reference": "一线人员先报告：X6132-M3-081出现设备报警ALARM_281。随后负责工程师介入处理并验证：X6132-M3-081连续运行验证通过，任务WO_0081可以关闭。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未体现一线人员报告设备报警、工程师介入验证并确认任务可关闭的配合过程。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2090,
+    "meta": {
+      "entries": 30,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_26",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "X6132-M3-081这次问题处理一共花了多少费用？",
+    "reference": "历史记录中没有相关信息，无法回答。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": true,
+    "judge_raw": "{\"reason\":\"生成答案明确表示历史记录中没有相关信息，符合无法回答的要求。\",\"label\":\"CORRECT\"}",
+    "context_tokens": 2226,
+    "meta": {
+      "entries": 32,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_27",
+    "category": "single_hop_fact",
+    "answerable": true,
+    "question": "能说说X6132-M3-081最初的异常记录吗？",
+    "reference": "X6132-M3-081出现设备报警ALARM_281。",
+    "prediction": "历史记录中没有相关信息。",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未提及设备报警ALARM_281，与金标准所述异常记录不符。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2281,
+    "meta": {
+      "entries": 33,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_25",
+    "category": "shift_temporal",
+    "answerable": true,
+    "question": "X6132-M3-081第一次处置失败、问题复发是在哪个班次？",
+    "reference": "2026-04-02 早班（07:30–15:30）",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"标准答案指出问题复发发生在2026-04-02早班，生成答案称没有相关信息，未识别出该班次。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2015,
+    "meta": {
+      "entries": 29,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_22",
+    "category": "multi_hop_event",
+    "answerable": true,
+    "question": "X6132-M3-081这次问题从发现到解决经历了哪些阶段？",
+    "reference": "X6132-M3-081出现设备报警ALARM_281；初步检查后怀疑部件温度传感器#081，但尚未确认；调整X6132-M3-081的参数后短暂恢复，随后再次出现问题；更换温度传感器#081后设备恢复，等待连续运行验证；X6132-M3-081连续运行验证通过，任务WO_0081可以关闭。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"答案称历史记录中没有相关信息，未提供金标准所述的报警、排查、调整、更换及连续运行验证等阶段。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2127,
+    "meta": {
+      "entries": 31,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_28",
+    "category": "temporal_order",
+    "answerable": true,
+    "question": "X6132-M3-081的两项处置措施，哪一项先发生？",
+    "reference": "第一次处置措施（调整X6132-M3-081的参数后短暂恢复，随后再次出现问题）发生在先，随后生效的处置措施（更换温度传感器#081后设备恢复，等待连续运行验证）发生在后。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未回答两项处置措施的先后顺序。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2058,
+    "meta": {
+      "entries": 30,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_23",
+    "category": "conditioned_parameter",
+    "answerable": true,
+    "question": "WO_0081对X6132-M3-081采取过哪些条件性处置？",
+    "reference": "针对X6132-M3-081采取的处置措施包括：调整X6132-M3-081的参数后短暂恢复，随后再次出现问题；随后更换温度传感器#081后设备恢复，等待连续运行验证。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"金答案明确记录了调整参数后短暂恢复、再次出现问题，并更换温度传感器#081后恢复且等待连续运行验证；生成答案称没有相关信息，遗漏并否认了这些处置。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2092,
+    "meta": {
+      "entries": 30,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_29",
+    "category": "state_tracking",
+    "answerable": true,
+    "question": "X6132-M3-081现在的状态记录是什么？",
+    "reference": "X6132-M3-081连续运行验证通过，任务WO_0081可以关闭。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称没有相关历史信息，未给出该设备连续运行验证通过且任务WO_0081可以关闭的状态记录。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2298,
+    "meta": {
+      "entries": 32,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_24",
+    "category": "tool_evidence_recall",
+    "answerable": true,
+    "question": "关闭X6132-M3-081相关任务时，Agent依据什么证据确认问题已解决？",
+    "reference": "vibration_query返回：X6132-M3-081连续运行72小时内振动值稳定在1.2mm/s，未超过阈值2.5mm/s，验证时间12:27。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"金答案明确给出振动查询结果作为问题已解决的证据，而生成答案称没有相关信息。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2214,
+    "meta": {
+      "entries": 32,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_30",
+    "category": "failed_intervention",
+    "answerable": true,
+    "question": "X6132-M3-081的哪次调整后来证明是无效的？",
+    "reference": "调整X6132-M3-081的参数后短暂恢复，随后再次出现问题。后来通过“更换温度传感器#081后设备恢复，等待连续运行验证”才得到解决。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"答案称历史记录中没有相关信息，未指出参数调整后短暂恢复但问题再次出现这一无效调整。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2038,
+    "meta": {
+      "entries": 30,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_31",
+    "category": "cross_role_dependency",
+    "answerable": true,
+    "question": "关于X6132-M3-081，操作员观察和工程师验证如何衔接？",
+    "reference": "一线人员先报告：X6132-M3-081出现设备报警ALARM_281。随后负责工程师介入处理并验证：X6132-M3-081连续运行验证通过，任务WO_0081可以关闭。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称没有相关信息，未说明一线人员报告ALARM_281及工程师验证通过、WO_0081可以关闭。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2104,
+    "meta": {
+      "entries": 31,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_33",
+    "category": "constraint_recall",
+    "answerable": true,
+    "question": "任务WO_0081当前必须遵守的约束是什么？",
+    "reference": "X6132-M3-081验证完成前不得关闭任务WO_0081；不得再次采用已失败的调整方案",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称没有相关信息，未提供必须等X6132-M3-081验证完成后才能关闭任务、且不得再次采用已失败调整方案这两项约束。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2137,
+    "meta": {
+      "entries": 31,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_34",
+    "category": "superseded_fact",
+    "answerable": true,
+    "question": "X6132-M3-081哪条早期判断后来被更新？",
+    "reference": "最初的判断/措施是“调整X6132-M3-081的参数后短暂恢复，随后再次出现问题”，后来被更新为“更换温度传感器#081后设备恢复，等待连续运行验证”。",
+    "prediction": "历史记录中没有相关信息。",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未提供金答案所述的早期判断及其后续更新。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2398,
+    "meta": {
+      "entries": 34,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_35",
+    "category": "multi_hop_event",
+    "answerable": true,
+    "question": "X6132-M3-081从问题出现到关闭任务，经过了哪些步骤？",
+    "reference": "X6132-M3-081出现设备报警ALARM_281；初步检查后怀疑部件温度传感器#081，但尚未确认；调整X6132-M3-081的参数后短暂恢复，随后再次出现问题；更换温度传感器#081后设备恢复，等待连续运行验证；X6132-M3-081连续运行验证通过，任务WO_0081可以关闭。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未提供金答案中从设备报警、检查和调整到更换传感器及连续运行验证通过的步骤。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2271,
+    "meta": {
+      "entries": 33,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_37",
+    "category": "tool_evidence_recall",
+    "answerable": true,
+    "question": "X6132-M3-081的异常刚被发现时，Agent依据的关键检测结果是什么？",
+    "reference": "alarm_log_query返回：X6132-M3-081触发报警代码ALARM_281，触发时间2026-02-02 15:57，当前仍处于报警状态。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称没有相关信息，未给出该设备触发ALARM_281、时间为2026-02-02 15:57且仍处于报警状态的关键检测结果。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2159,
+    "meta": {
+      "entries": 32,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_32",
+    "category": "working_memory_snapshot",
+    "answerable": true,
+    "question": "截至2026-06-30T12:00:00+08:00，WO_0081还有哪些未完成事项？",
+    "reference": "有效事实：更换温度传感器#081后设备恢复，等待连续运行验证。；X6132-M3-081连续运行验证通过，任务WO_0081可以关闭。 待办：归档WO_0081的处置记录。约束：X6132-M3-081验证完成前不得关闭任务WO_0081；不得再次采用已失败的调整方案。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"答案称没有相关信息，遗漏了归档WO_0081处置记录这一未完成事项。\",\"label\":\"WRONG\"}",
+    "context_tokens": 2062,
+    "meta": {
+      "entries": 29,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_36",
+    "category": "conditioned_parameter",
+    "answerable": true,
+    "question": "WO_0081里涉及X6132-M3-081的调整或处置措施有哪些？",
+    "reference": "针对X6132-M3-081采取的处置措施包括：调整X6132-M3-081的参数后短暂恢复，随后再次出现问题；随后更换温度传感器#081后设备恢复，等待连续运行验证。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"生成答案称历史记录中没有相关信息，未提及参数调整、短暂恢复、再次出现问题及更换温度传感器后等待连续运行验证等处置措施，与标准答案不符。\",\"label\":\"WRONG\"}",
+    "context_tokens": 1941,
+    "meta": {
+      "entries": 28,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_38",
+    "category": "shift_temporal",
+    "answerable": true,
+    "question": "X6132-M3-081的问题是在哪天哪个班被真正处理好的？",
+    "reference": "2026-05-01 夜班（23:30–次日07:30）",
+    "prediction": "历史记录中没有相关信息",
+    "correct": false,
+    "judge_raw": "{\"reason\":\"The generated answer does not identify the shift or date specified in the gold answer.\",\"label\":\"WRONG\"}",
+    "context_tokens": 2309,
+    "meta": {
+      "entries": 33,
+      "provenance": "window"
+    }
+  },
+  {
+    "question_id": "Q_GEN_0081_39",
+    "category": "unanswerable",
+    "answerable": false,
+    "question": "X6132-M3-081第二次返工是由谁负责的？",
+    "reference": "历史记录中没有相关信息，无法回答。",
+    "prediction": "历史记录中没有相关信息",
+    "correct": true,
+    "judge_raw": "{\"reason\":\"生成答案明确表示历史记录中没有相关信息，符合无法回答的要求。\",\"label\":\"CORRECT\"}",
+    "context_tokens": 1849,
+    "meta": {
+      "entries": 27,
+      "provenance": "window"
+    }
+  }
+]

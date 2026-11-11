@@ -1,0 +1,5 @@
+panel,writer,recall,low_written,precision
+a,dev30_writer_8b_zs,82.67,42.28,41.06
+a,dev30_writer_luna,76.67,16.15,62.84
+a,dev30_writer_sft_ep3,76.0,12.67,68.13
+b,v2test90_K30_writer_sft_ep3_req,100.0,5.23,90.68

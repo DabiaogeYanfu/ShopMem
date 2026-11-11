@@ -1,0 +1,37 @@
+metric,series,K,value
+judge_acc_micro,ShopMem,1,90.77
+judge_acc_micro,ShopMem,10,91.48
+judge_acc_micro,ShopMem,30,90.85
+judge_acc_micro,ShopMem,90,88.58
+judge_acc_micro,RAG (hybrid + rerank),1,50.23
+judge_acc_micro,RAG (hybrid + rerank),10,48.92
+judge_acc_micro,RAG (hybrid + rerank),30,46.52
+judge_acc_micro,RAG (hybrid + rerank),90,42.71
+judge_acc_micro,Full context,1,58.58
+judge_acc_micro,Full context,10,39.49
+judge_acc_micro,Full context,30,29.46
+judge_acc_micro,Full context,90,17.07
+turn_recall,ShopMem,1,67.41
+turn_recall,ShopMem,10,67.27
+turn_recall,ShopMem,30,66.67
+turn_recall,ShopMem,90,65.59
+turn_recall,RAG (hybrid + rerank),1,57.76
+turn_recall,RAG (hybrid + rerank),10,53.97
+turn_recall,RAG (hybrid + rerank),30,47.94
+turn_recall,RAG (hybrid + rerank),90,39.06
+turn_recall,Full context,1,100.0
+turn_recall,Full context,10,100.0
+turn_recall,Full context,30,73.6
+turn_recall,Full context,90,24.0
+context_tokens_mean,ShopMem,1,1761.03
+context_tokens_mean,ShopMem,10,1974.69
+context_tokens_mean,ShopMem,30,2092.41
+context_tokens_mean,ShopMem,90,2263.18
+context_tokens_mean,RAG (hybrid + rerank),1,844.36
+context_tokens_mean,RAG (hybrid + rerank),10,839.19
+context_tokens_mean,RAG (hybrid + rerank),30,817.75
+context_tokens_mean,RAG (hybrid + rerank),90,789.43
+context_tokens_mean,Full context,1,4483.96
+context_tokens_mean,Full context,10,44839.56
+context_tokens_mean,Full context,30,98963.67
+context_tokens_mean,Full context,90,99072

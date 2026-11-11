@@ -1,0 +1,197 @@
+{
+  "all": {
+    "n": 5324,
+    "luna_acc": 0.8204,
+    "sol_acc": 0.6578,
+    "agreement": 0.811,
+    "kappa": 0.5263,
+    "luna_T_sol_F": 936,
+    "luna_F_sol_T": 70,
+    "both_T": 3432,
+    "both_F": 886
+  },
+  "by_source": {
+    "yan": {
+      "n": 1287,
+      "luna_acc": 0.8089,
+      "sol_acc": 0.6636,
+      "agreement": 0.8345,
+      "kappa": 0.5852,
+      "luna_T_sol_F": 200,
+      "luna_F_sol_T": 13,
+      "both_T": 841,
+      "both_F": 233
+    },
+    "micu": {
+      "n": 4037,
+      "luna_acc": 0.8241,
+      "sol_acc": 0.6559,
+      "agreement": 0.8036,
+      "kappa": 0.5076,
+      "luna_T_sol_F": 736,
+      "luna_F_sol_T": 57,
+      "both_T": 2591,
+      "both_F": 653
+    }
+  },
+  "sol_wrong_luna_right_reasons": {
+    "adds unsupported details": 821,
+    "other": 68,
+    "omits required element": 47
+  },
+  "luna_wrong_sol_right_reasons": {
+    "omits required element": 30,
+    "other": 25,
+    "adds unsupported details": 14,
+    "contradicts gold": 1
+  },
+  "pred_words_median": {
+    "agree": 42,
+    "luna_T_sol_F": 69
+  },
+  "by_category": {
+    "conditioned_parameter": {
+      "n": 402,
+      "luna_acc": 0.9055,
+      "sol_acc": 0.4776,
+      "agreement": 0.5622,
+      "kappa": 0.1551,
+      "luna_T_sol_F": 174,
+      "luna_F_sol_T": 2,
+      "both_T": 190,
+      "both_F": 36
+    },
+    "constraint_recall": {
+      "n": 410,
+      "luna_acc": 0.8756,
+      "sol_acc": 0.3268,
+      "agreement": 0.3927,
+      "kappa": 0.0361,
+      "luna_T_sol_F": 237,
+      "luna_F_sol_T": 12,
+      "both_T": 122,
+      "both_F": 39
+    },
+    "cross_role_dependency": {
+      "n": 381,
+      "luna_acc": 0.0367,
+      "sol_acc": 0.0341,
+      "agreement": 0.9974,
+      "kappa": 0.9616,
+      "luna_T_sol_F": 1,
+      "luna_F_sol_T": 0,
+      "both_T": 13,
+      "both_F": 367
+    },
+    "failed_intervention": {
+      "n": 419,
+      "luna_acc": 0.9594,
+      "sol_acc": 0.6802,
+      "agreement": 0.6874,
+      "kappa": 0.0651,
+      "luna_T_sol_F": 124,
+      "luna_F_sol_T": 7,
+      "both_T": 278,
+      "both_F": 10
+    },
+    "multi_hop_event": {
+      "n": 415,
+      "luna_acc": 0.388,
+      "sol_acc": 0.2699,
+      "agreement": 0.7904,
+      "kappa": 0.5325,
+      "luna_T_sol_F": 68,
+      "luna_F_sol_T": 19,
+      "both_T": 93,
+      "both_F": 235
+    },
+    "shift_temporal": {
+      "n": 404,
+      "luna_acc": 0.9629,
+      "sol_acc": 0.9629,
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "luna_T_sol_F": 0,
+      "luna_F_sol_T": 0,
+      "both_T": 389,
+      "both_F": 15
+    },
+    "single_hop_fact": {
+      "n": 421,
+      "luna_acc": 0.8147,
+      "sol_acc": 0.658,
+      "agreement": 0.8052,
+      "kappa": 0.5138,
+      "luna_T_sol_F": 74,
+      "luna_F_sol_T": 8,
+      "both_T": 269,
+      "both_F": 70
+    },
+    "state_tracking": {
+      "n": 426,
+      "luna_acc": 0.9648,
+      "sol_acc": 0.9366,
+      "agreement": 0.9531,
+      "kappa": 0.5012,
+      "luna_T_sol_F": 16,
+      "luna_F_sol_T": 4,
+      "both_T": 395,
+      "both_F": 11
+    },
+    "superseded_fact": {
+      "n": 402,
+      "luna_acc": 0.8806,
+      "sol_acc": 0.6393,
+      "agreement": 0.7289,
+      "kappa": 0.3118,
+      "luna_T_sol_F": 103,
+      "luna_F_sol_T": 6,
+      "both_T": 251,
+      "both_F": 42
+    },
+    "temporal_order": {
+      "n": 413,
+      "luna_acc": 0.9637,
+      "sol_acc": 0.753,
+      "agreement": 0.7748,
+      "kappa": 0.1514,
+      "luna_T_sol_F": 90,
+      "luna_F_sol_T": 3,
+      "both_T": 308,
+      "both_F": 12
+    },
+    "tool_evidence_recall": {
+      "n": 397,
+      "luna_acc": 0.9421,
+      "sol_acc": 0.9043,
+      "agreement": 0.927,
+      "kappa": 0.4876,
+      "luna_T_sol_F": 22,
+      "luna_F_sol_T": 7,
+      "both_T": 352,
+      "both_F": 16
+    },
+    "unanswerable": {
+      "n": 410,
+      "luna_acc": 0.9439,
+      "sol_acc": 0.9439,
+      "agreement": 1.0,
+      "kappa": 1.0,
+      "luna_T_sol_F": 0,
+      "luna_F_sol_T": 0,
+      "both_T": 387,
+      "both_F": 23
+    },
+    "working_memory_snapshot": {
+      "n": 424,
+      "luna_acc": 0.9717,
+      "sol_acc": 0.9127,
+      "agreement": 0.9316,
+      "kappa": 0.3817,
+      "luna_T_sol_F": 27,
+      "luna_F_sol_T": 2,
+      "both_T": 385,
+      "both_F": 10
+    }
+  }
+}

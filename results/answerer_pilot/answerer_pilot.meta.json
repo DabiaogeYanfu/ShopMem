@@ -1,0 +1,4 @@
+{
+  "command": "python evaluation/answerer_pilot.py --run runs/teacher_train_K20 --out results/answerer_pilot",
+  "run": "runs/teacher_train_K20"
+}

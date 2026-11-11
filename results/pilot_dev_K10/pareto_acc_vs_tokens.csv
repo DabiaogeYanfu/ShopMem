@@ -1,0 +1,6 @@
+method,run,context_tokens_mean,judge_acc_macro
+full_context,pilot_full_context_K10,24509,38.46
+rag_dense,pilot_rag_dense_K10,714.2,23.08
+rag_bm25,pilot_rag_bm25_K10,694.3,21.54
+rag_hybrid,pilot_rag_hybrid_K10,691.9,32.31
+simplemem,pilot_simplemem_K10,2155.0,7.69

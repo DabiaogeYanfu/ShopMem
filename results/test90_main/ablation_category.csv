@@ -1,0 +1,53 @@
+method,category,judge_acc
+SFT,conditioned_parameter,25.2
+SFT,constraint_recall,71.1
+SFT,cross_role_dependency,2.2
+SFT,failed_intervention,59.3
+SFT,multi_hop_event,2.6
+SFT,shift_temporal,81.5
+SFT,single_hop_fact,61.5
+SFT,state_tracking,52.6
+SFT,superseded_fact,41.9
+SFT,temporal_order,72.2
+SFT,tool_evidence_recall,54.4
+SFT,unanswerable,80.4
+SFT,working_memory_snapshot,54.1
+w/o SUPERSEDE/EXPIRE,conditioned_parameter,25.2
+w/o SUPERSEDE/EXPIRE,constraint_recall,84.4
+w/o SUPERSEDE/EXPIRE,cross_role_dependency,2.2
+w/o SUPERSEDE/EXPIRE,failed_intervention,63.3
+w/o SUPERSEDE/EXPIRE,multi_hop_event,1.5
+w/o SUPERSEDE/EXPIRE,shift_temporal,78.1
+w/o SUPERSEDE/EXPIRE,single_hop_fact,66.7
+w/o SUPERSEDE/EXPIRE,state_tracking,50.0
+w/o SUPERSEDE/EXPIRE,superseded_fact,37.4
+w/o SUPERSEDE/EXPIRE,temporal_order,73.7
+w/o SUPERSEDE/EXPIRE,tool_evidence_recall,51.1
+w/o SUPERSEDE/EXPIRE,unanswerable,80.7
+w/o SUPERSEDE/EXPIRE,working_memory_snapshot,34.4
+w/o r_ind,conditioned_parameter,22.2
+w/o r_ind,constraint_recall,68.1
+w/o r_ind,cross_role_dependency,0.0
+w/o r_ind,failed_intervention,65.2
+w/o r_ind,multi_hop_event,2.6
+w/o r_ind,shift_temporal,80.4
+w/o r_ind,single_hop_fact,64.1
+w/o r_ind,state_tracking,51.5
+w/o r_ind,superseded_fact,40.0
+w/o r_ind,temporal_order,72.6
+w/o r_ind,tool_evidence_recall,50.4
+w/o r_ind,unanswerable,81.1
+w/o r_ind,working_memory_snapshot,50.7
+w/o r_evid,conditioned_parameter,26.7
+w/o r_evid,constraint_recall,78.5
+w/o r_evid,cross_role_dependency,1.1
+w/o r_evid,failed_intervention,55.9
+w/o r_evid,multi_hop_event,0.4
+w/o r_evid,shift_temporal,82.6
+w/o r_evid,single_hop_fact,67.8
+w/o r_evid,state_tracking,47.4
+w/o r_evid,superseded_fact,37.4
+w/o r_evid,temporal_order,79.6
+w/o r_evid,tool_evidence_recall,55.2
+w/o r_evid,unanswerable,84.1
+w/o r_evid,working_memory_snapshot,55.2

@@ -1,0 +1,99 @@
+{
+  "questions": 99,
+  "trajectories": 396,
+  "rescue_rate": 0.6767676767676768,
+  "rescue_rate_any_format": 0.7272727272727273,
+  "traj_acc": 0.5429292929292929,
+  "threshold": 0.3,
+  "by_category": {
+    "conditioned_parameter": {
+      "questions": 10,
+      "rescued": 7,
+      "rescued_any": 8,
+      "traj": 40,
+      "correct": 23,
+      "rescue_rate": 0.7
+    },
+    "cross_role_dependency": {
+      "questions": 10,
+      "rescued": 0,
+      "rescued_any": 1,
+      "traj": 40,
+      "correct": 1,
+      "rescue_rate": 0.0
+    },
+    "failed_intervention": {
+      "questions": 10,
+      "rescued": 9,
+      "rescued_any": 10,
+      "traj": 40,
+      "correct": 32,
+      "rescue_rate": 0.9
+    },
+    "multi_hop_event": {
+      "questions": 10,
+      "rescued": 4,
+      "rescued_any": 4,
+      "traj": 40,
+      "correct": 5,
+      "rescue_rate": 0.4
+    },
+    "shift_temporal": {
+      "questions": 10,
+      "rescued": 7,
+      "rescued_any": 7,
+      "traj": 40,
+      "correct": 27,
+      "rescue_rate": 0.7
+    },
+    "single_hop_fact": {
+      "questions": 10,
+      "rescued": 4,
+      "rescued_any": 5,
+      "traj": 40,
+      "correct": 11,
+      "rescue_rate": 0.4
+    },
+    "state_tracking": {
+      "questions": 10,
+      "rescued": 10,
+      "rescued_any": 10,
+      "traj": 40,
+      "correct": 38,
+      "rescue_rate": 1.0
+    },
+    "superseded_fact": {
+      "questions": 10,
+      "rescued": 10,
+      "rescued_any": 10,
+      "traj": 40,
+      "correct": 33,
+      "rescue_rate": 1.0
+    },
+    "temporal_order": {
+      "questions": 7,
+      "rescued": 6,
+      "rescued_any": 6,
+      "traj": 28,
+      "correct": 15,
+      "rescue_rate": 0.8571428571428571
+    },
+    "tool_evidence_recall": {
+      "questions": 10,
+      "rescued": 9,
+      "rescued_any": 10,
+      "traj": 40,
+      "correct": 26,
+      "rescue_rate": 0.9
+    },
+    "unanswerable": {
+      "questions": 2,
+      "rescued": 1,
+      "rescued_any": 1,
+      "traj": 8,
+      "correct": 4,
+      "rescue_rate": 0.5
+    }
+  },
+  "decision": "add sol trajectories for hard questions"
+}

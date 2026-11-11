@@ -1,0 +1,22 @@
+{
+  "command": "python results/main_K30/make_main.py",
+  "runs": [
+    "runs/main_K30_shopmem",
+    "runs/main_K30_rag_hybrid_rr",
+    "runs/main_K30_rag_hybrid",
+    "runs/main_K30_rag_dense",
+    "runs/main_K30_rag_bm25",
+    "runs/main_K30_full_context_plain",
+    "runs/main_K30_full_context",
+    "runs/main_K30_observation_mask",
+    "runs/main_K30_sliding_window",
+    "runs/main_K30_simplemem",
+    "runs/main_K30_oracle_gate_rag"
+  ],
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 0,
+    "stratified_by": "category",
+    "test": "one-sided"
+  }
+}

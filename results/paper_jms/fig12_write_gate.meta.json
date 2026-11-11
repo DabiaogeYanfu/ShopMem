@@ -1,0 +1,9 @@
+{
+  "command": "python -m memeval.figures fig05 fig12",
+  "runs": [
+    "runs/dev30_writer_8b_zs",
+    "runs/dev30_writer_luna",
+    "runs/dev30_writer_sft_ep3",
+    "runs/v2test90_K30_writer_sft_ep3_req"
+  ]
+}

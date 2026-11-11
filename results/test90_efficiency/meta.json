@@ -1,0 +1,8 @@
+{
+ "source_runs": [
+  "runs/eff_writer_sft_ep3",
+  "runs/eff_shopmem_v1"
+ ],
+ "setting": "test90 H_EN_TEST90_K030_001 (1725 turns), fresh empty LLM/embedding/rerank caches, write_workers 16, Writer: Qwen3-4B+LoRA vLLM on one RTX 3090 (GPU 7); v1 writes with Qwen3-8B tp=2 (GPUs 3,4); answerer Qwen3-8B; 130 questions (10/category)",
+ "script": "scripts/eff_summary.py"
+}

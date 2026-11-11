@@ -1,0 +1,6 @@
+{
+  "command": "python -m memeval.figures sft --run runs/sft_writer_K20 --out results/sft_writer_K20/sft_curve",
+  "runs": [
+    "runs/sft_writer_K20"
+  ]
+}

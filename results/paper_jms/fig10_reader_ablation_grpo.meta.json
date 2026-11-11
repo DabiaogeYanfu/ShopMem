@@ -1,0 +1,10 @@
+{
+  "command": "python -m memeval.figures fig05 fig06 fig10 fig11 fig12 fig13 fig14",
+  "runs": [
+    "runs/v2test90_K30_writer_sft_ep3_req",
+    "runs/v2test90_K30_tmax0_reader_sft_sol",
+    "runs/v2test90_K30_reader_sft_sol",
+    "runs/v2test90_K30_grpo_stab1_final",
+    "results/reader_grpo/grpo_curve.csv"
+  ]
+}

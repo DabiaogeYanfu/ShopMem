@@ -1,0 +1,29 @@
+v1    acc  48.2  n 1170
+SFT   acc  52.1  n 1170
+b200  acc  53.0  n 1170
+c200  acc  50.9  n 1170
+cfin  acc  48.0  n 1170
+SFT vs c200: SFT-only 130, c200-only 115, p=0.371
+SFT vs cfin: SFT-only 156, cfin-only 108, p=0.00374
+c200 vs cfin: c200-only 130, cfin-only 97, p=0.0334
+b200 vs c200: b200-only 129, c200-only 104, p=0.116
+v1 vs c200: v1-only 144, c200-only 175, p=0.0929
+v1 vs cfin: v1-only 172, cfin-only 170, p=0.957
+category                       v1    SFT   b200   c200   cfin
+conditioned_parameter        13.3   16.7   20.0   10.0   12.2
+constraint_recall            76.7   74.4   72.2   73.3   71.1
+cross_role_dependency        24.4    0.0    0.0    0.0    6.7
+failed_intervention          68.9   66.7   70.0   74.4   68.9
+multi_hop_event               0.0    0.0    3.3    0.0    4.4
+shift_temporal               71.1   82.2   77.8   77.8   71.1
+single_hop_fact              70.0   71.1   68.9   67.8   68.9
+state_tracking               61.1   62.2   66.7   64.4   54.4
+superseded_fact              26.7   42.2   41.1   43.3   40.0
+temporal_order               66.7   76.7   78.9   73.3   63.3
+tool_evidence_recall         56.7   58.9   53.3   57.8   47.8
+unanswerable                 83.3   80.0   82.2   77.8   77.8
+working_memory_snapshot       7.8   46.7   54.4   41.1   37.8
+SFT ctx 1012 entries 290
+b200 ctx 901 entries 413
+c200 ctx 893 entries 319
+cfin ctx 943 entries 332

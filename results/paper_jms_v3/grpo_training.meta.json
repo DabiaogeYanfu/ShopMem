@@ -1,0 +1,7 @@
+{
+  "command": "python -m memeval.figures grpo waterfall kcurve gate growth",
+  "runs": [
+    "runs/reader_grpo_stab1",
+    "runs/reader_grpo_lr1e5"
+  ]
+}

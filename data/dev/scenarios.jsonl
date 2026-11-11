@@ -1,0 +1,2 @@
+{"scenario_id":"SC_MAINT_001","domain":"equipment_maintenance","industry":"synthetic_assembly","enterprise_id":"ENT_001","site_id":"SITE_01","area_id":"AREA_ASSEMBLY","equipment_ids":["EQ_LINE02","EQ_LINE03"],"time_span":{"start":"2026-01-05","end":"2026-03-20"},"synthetic":true}
+{"scenario_id":"SC_QUAL_001","domain":"quality_anomaly","industry":"synthetic_assembly","enterprise_id":"ENT_001","site_id":"SITE_01","area_id":"AREA_ASSEMBLY","equipment_ids":["EQ_LINE05"],"time_span":{"start":"2026-02-01","end":"2026-04-10"},"synthetic":true}

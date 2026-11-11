@@ -1,0 +1,66 @@
+method,label,category,event_recall
+shopmem,ShopMem (ours),single_hop_fact,97.78
+shopmem,ShopMem (ours),state_tracking,81.48
+shopmem,ShopMem (ours),constraint_recall,100.0
+shopmem,ShopMem (ours),failed_intervention,76.22
+shopmem,ShopMem (ours),superseded_fact,70.44
+shopmem,ShopMem (ours),conditioned_parameter,73.85
+shopmem,ShopMem (ours),temporal_order,76.81
+shopmem,ShopMem (ours),multi_hop_event,78.0
+shopmem,ShopMem (ours),cross_role_dependency,76.52
+shopmem,ShopMem (ours),working_memory_snapshot,40.15
+shopmem,ShopMem (ours),tool_evidence_recall,94.44
+shopmem,ShopMem (ours),shift_temporal,96.3
+shopmem,ShopMem (ours),unanswerable,0
+simplemem,SimpleMem,single_hop_fact,33.33
+simplemem,SimpleMem,state_tracking,18.89
+simplemem,SimpleMem,constraint_recall,16.67
+simplemem,SimpleMem,failed_intervention,17.11
+simplemem,SimpleMem,superseded_fact,17.11
+simplemem,SimpleMem,conditioned_parameter,17.11
+simplemem,SimpleMem,temporal_order,17.11
+simplemem,SimpleMem,multi_hop_event,17.11
+simplemem,SimpleMem,cross_role_dependency,17.11
+simplemem,SimpleMem,working_memory_snapshot,13.93
+simplemem,SimpleMem,tool_evidence_recall,22.96
+simplemem,SimpleMem,shift_temporal,22.22
+simplemem,SimpleMem,unanswerable,0
+rag_hybrid,RAG-hybrid + rerank,single_hop_fact,100.0
+rag_hybrid,RAG-hybrid + rerank,state_tracking,83.33
+rag_hybrid,RAG-hybrid + rerank,constraint_recall,100.0
+rag_hybrid,RAG-hybrid + rerank,failed_intervention,74.0
+rag_hybrid,RAG-hybrid + rerank,superseded_fact,77.11
+rag_hybrid,RAG-hybrid + rerank,conditioned_parameter,78.44
+rag_hybrid,RAG-hybrid + rerank,temporal_order,74.22
+rag_hybrid,RAG-hybrid + rerank,multi_hop_event,75.85
+rag_hybrid,RAG-hybrid + rerank,cross_role_dependency,74.96
+rag_hybrid,RAG-hybrid + rerank,working_memory_snapshot,36.67
+rag_hybrid,RAG-hybrid + rerank,tool_evidence_recall,96.3
+rag_hybrid,RAG-hybrid + rerank,shift_temporal,98.15
+rag_hybrid,RAG-hybrid + rerank,unanswerable,0
+full_context,Full context,single_hop_fact,100.0
+full_context,Full context,state_tracking,100.0
+full_context,Full context,constraint_recall,100.0
+full_context,Full context,failed_intervention,100.0
+full_context,Full context,superseded_fact,100.0
+full_context,Full context,conditioned_parameter,100.0
+full_context,Full context,temporal_order,100.0
+full_context,Full context,multi_hop_event,100.0
+full_context,Full context,cross_role_dependency,100.0
+full_context,Full context,working_memory_snapshot,100.0
+full_context,Full context,tool_evidence_recall,100.0
+full_context,Full context,shift_temporal,100.0
+full_context,Full context,unanswerable,0
+oracle_gate_rag,Oracle gate + RAG,single_hop_fact,100.0
+oracle_gate_rag,Oracle gate + RAG,state_tracking,94.44
+oracle_gate_rag,Oracle gate + RAG,constraint_recall,100.0
+oracle_gate_rag,Oracle gate + RAG,failed_intervention,74.96
+oracle_gate_rag,Oracle gate + RAG,superseded_fact,81.56
+oracle_gate_rag,Oracle gate + RAG,conditioned_parameter,79.85
+oracle_gate_rag,Oracle gate + RAG,temporal_order,76.44
+oracle_gate_rag,Oracle gate + RAG,multi_hop_event,75.48
+oracle_gate_rag,Oracle gate + RAG,cross_role_dependency,72.22
+oracle_gate_rag,Oracle gate + RAG,working_memory_snapshot,36.74
+oracle_gate_rag,Oracle gate + RAG,tool_evidence_recall,97.04
+oracle_gate_rag,Oracle gate + RAG,shift_temporal,95.93
+oracle_gate_rag,Oracle gate + RAG,unanswerable,0

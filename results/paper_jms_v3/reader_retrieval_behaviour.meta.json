@@ -1,0 +1,7 @@
+{
+  "command": "python -m memeval.figures all",
+  "runs": [
+    "runs/v2test90_K30_grpo_stab1_final",
+    "runs/v2test90_K30_reader_sft_sol"
+  ]
+}

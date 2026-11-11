@@ -1,0 +1,10 @@
+{
+  "command": "python -m memeval.figures category --runs runs/pilot_full_context_K10 runs/pilot_rag_dense_K10 runs/pilot_rag_bm25_K10 runs/pilot_rag_hybrid_K10 runs/pilot_simplemem_K10 --metric event_recall --out results/pilot_dev_K10/recall_by_category",
+  "runs": [
+    "runs/pilot_full_context_K10",
+    "runs/pilot_rag_dense_K10",
+    "runs/pilot_rag_bm25_K10",
+    "runs/pilot_rag_hybrid_K10",
+    "runs/pilot_simplemem_K10"
+  ]
+}

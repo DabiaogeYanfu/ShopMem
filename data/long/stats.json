@@ -1,0 +1,643 @@
+{
+  "corpus": {
+    "zh": {
+      "scenarios": 100,
+      "domains": {
+        "maintenance": 25,
+        "quality": 25,
+        "process": 25,
+        "logistics": 25
+      },
+      "sessions": 500,
+      "turns": 5656,
+      "turns_per_session": 11.312,
+      "turns_per_scenario": 56.56,
+      "text_tokens": 273371,
+      "formatted_tokens_per_scenario": 3946.15,
+      "questions": 3900,
+      "unanswerable_questions": 300,
+      "evidence_per_question": 8.583333333333334,
+      "low_density_turn_ratio": 0.7347949080622348,
+      "low_density_token_ratio": 0.6234201872181029,
+      "turns_with_resolved_time": 353,
+      "turns_with_resolved_shift": 321,
+      "turns_with_resolved_entities": 226,
+      "sessions_by_shift": {
+        "夜班": 191,
+        "中班": 88,
+        "早班": 108,
+        "白班": 113
+      },
+      "by_turn_type": {
+        "user_query": {
+          "turns": 400,
+          "tokens": 14749,
+          "low_density_ratio": 0.0,
+          "tokens_per_turn": 36.8725,
+          "token_share": 0.053952321204516936
+        },
+        "agent_think": {
+          "turns": 944,
+          "tokens": 15370,
+          "low_density_ratio": 1.0,
+          "tokens_per_turn": 16.281779661016948,
+          "token_share": 0.05622395938120722
+        },
+        "agent_tool_call": {
+          "turns": 1202,
+          "tokens": 35733,
+          "low_density_ratio": 1.0,
+          "tokens_per_turn": 29.727953410981698,
+          "token_share": 0.13071247498820285
+        },
+        "tool_observation": {
+          "turns": 1202,
+          "tokens": 176353,
+          "low_density_ratio": 0.6672212978369384,
+          "tokens_per_turn": 146.71630615640598,
+          "token_share": 0.6451050038226439
+        },
+        "agent_response": {
+          "turns": 526,
+          "tokens": 12080,
+          "low_density_ratio": 0.23954372623574144,
+          "tokens_per_turn": 22.96577946768061,
+          "token_share": 0.04418903248698655
+        },
+        "human": {
+          "turns": 1223,
+          "tokens": 16414,
+          "low_density_ratio": 0.7547015535568274,
+          "tokens_per_turn": 13.421095666394113,
+          "token_share": 0.060042945301440165
+        },
+        "tool_call": {
+          "turns": 159,
+          "tokens": 2672,
+          "low_density_ratio": 1.0,
+          "tokens_per_turn": 16.80503144654088,
+          "token_share": 0.009774262815002323
+        }
+      },
+      "by_category": {
+        "conditioned_parameter": {
+          "questions": 300,
+          "difficulty": {
+            "medium": 300
+          },
+          "evidence_turns": 13,
+          "required_events": 5,
+          "answer_tokens": 70.95
+        },
+        "constraint_recall": {
+          "questions": 300,
+          "difficulty": {
+            "easy": 300
+          },
+          "evidence_turns": 1,
+          "required_events": 1,
+          "answer_tokens": 25
+        },
+        "cross_role_dependency": {
+          "questions": 300,
+          "difficulty": {
+            "hard": 300
+          },
+          "evidence_turns": 13,
+          "required_events": 5,
+          "answer_tokens": 21
+        },
+        "failed_intervention": {
+          "questions": 300,
+          "difficulty": {
+            "medium": 300
+          },
+          "evidence_turns": 13,
+          "required_events": 5,
+          "answer_tokens": 28.75
+        },
+        "multi_hop_event": {
+          "questions": 300,
+          "difficulty": {
+            "hard": 300
+          },
+          "evidence_turns": 13,
+          "required_events": 5,
+          "answer_tokens": 129.13
+        },
+        "shift_temporal": {
+          "questions": 300,
+          "difficulty": {
+            "medium": 300
+          },
+          "evidence_turns": 2,
+          "required_events": 1,
+          "answer_tokens": 17.92
+        },
+        "single_hop_fact": {
+          "questions": 300,
+          "difficulty": {
+            "easy": 300
+          },
+          "evidence_turns": 3,
+          "required_events": 1,
+          "answer_tokens": 25.15
+        },
+        "state_tracking": {
+          "questions": 300,
+          "difficulty": {
+            "easy": 300
+          },
+          "evidence_turns": 3,
+          "required_events": 1,
+          "answer_tokens": 23.25
+        },
+        "superseded_fact": {
+          "questions": 300,
+          "difficulty": {
+            "medium": 300
+          },
+          "evidence_turns": 13,
+          "required_events": 5,
+          "answer_tokens": 61.95
+        },
+        "temporal_order": {
+          "questions": 300,
+          "difficulty": {
+            "medium": 300
+          },
+          "evidence_turns": 13,
+          "required_events": 5,
+          "answer_tokens": 66.95
+        },
+        "tool_evidence_recall": {
+          "questions": 300,
+          "difficulty": {
+            "medium": 300
+          },
+          "evidence_turns": 1,
+          "required_events": 1,
+          "answer_tokens": 46.3
+        },
+        "unanswerable": {
+          "questions": 300,
+          "difficulty": {
+            "hard": 300
+          },
+          "evidence_turns": 0,
+          "required_events": 0,
+          "answer_tokens": 10
+        },
+        "working_memory_snapshot": {
+          "questions": 300,
+          "difficulty": {
+            "hard": 300
+          },
+          "evidence_turns": 15,
+          "required_events": 5,
+          "answer_tokens": 131
+        }
+      }
+    },
+    "en": {
+      "scenarios": 100,
+      "domains": {
+        "maintenance": 25,
+        "quality": 25,
+        "process": 25,
+        "logistics": 25
+      },
+      "sessions": 500,
+      "turns": 5653,
+      "turns_per_session": 11.306,
+      "turns_per_scenario": 56.53,
+      "text_tokens": 273976,
+      "formatted_tokens_per_scenario": 3936.48,
+      "questions": 3900,
+      "unanswerable_questions": 300,
+      "evidence_per_question": 8.583333333333334,
+      "low_density_turn_ratio": 0.7346541659295949,
+      "low_density_token_ratio": 0.6257299909481122,
+      "turns_with_resolved_time": 345,
+      "turns_with_resolved_shift": 321,
+      "turns_with_resolved_entities": 228,
+      "sessions_by_shift": {
+        "Night shift": 218,
+        "Swing shift": 89,
+        "Day shift": 193
+      },
+      "by_turn_type": {
+        "user_query": {
+          "turns": 400,
+          "tokens": 14549,
+          "low_density_ratio": 0.0,
+          "tokens_per_turn": 36.3725,
+          "token_share": 0.05310319152042515
+        },
+        "agent_think": {
+          "turns": 935,
+          "tokens": 14879,
+          "low_density_ratio": 1.0,
+          "tokens_per_turn": 15.91336898395722,
+          "token_share": 0.054307676584810345
+        },
+        "agent_tool_call": {
+          "turns": 1215,
+          "tokens": 36128,
+          "low_density_ratio": 1.0,
+          "tokens_per_turn": 29.734979423868314,
+          "token_share": 0.13186556486699566
+        },
+        "tool_observation": {
+          "turns": 1215,
+          "tokens": 178049,
+          "low_density_ratio": 0.6707818930041153,
+          "tokens_per_turn": 146.5423868312757,
+          "token_share": 0.6498707916021841
+        },
+        "agent_response": {
+          "turns": 517,
+          "tokens": 11859,
+          "low_density_ratio": 0.2263056092843327,
+          "tokens_per_turn": 22.938104448742745,
+          "token_share": 0.04328481326831547
+        },
+        "human": {
+          "turns": 1210,
+          "tokens": 16007,
+          "low_density_ratio": 0.7520661157024794,
+          "tokens_per_turn": 13.22892561983471,
+          "token_share": 0.0584248255321634
+        },
+        "tool_call": {
+          "turns": 161,
+          "tokens": 2505,
+          "low_density_ratio": 1.0,
+          "tokens_per_turn": 15.559006211180124,
+          "token_share": 0.009143136625105849
+        }
+      },
+      "by_category": {
+        "conditioned_parameter": {
+          "questions": 300,
+          "difficulty": {
+            "medium": 300
+          },
+          "evidence_turns": 13,
+          "required_events": 5,
+          "answer_tokens": 69.85
+        },
+        "constraint_recall": {
+          "questions": 300,
+          "difficulty": {
+            "easy": 300
+          },
+          "evidence_turns": 1,
+          "required_events": 1,
+          "answer_tokens": 28
+        },
+        "cross_role_dependency": {
+          "questions": 300,
+          "difficulty": {
+            "hard": 300
+          },
+          "evidence_turns": 13,
+          "required_events": 5,
+          "answer_tokens": 20.5
+        },
+        "failed_intervention": {
+          "questions": 300,
+          "difficulty": {
+            "medium": 300
+          },
+          "evidence_turns": 13,
+          "required_events": 5,
+          "answer_tokens": 29.6
+        },
+        "multi_hop_event": {
+          "questions": 300,
+          "difficulty": {
+            "hard": 300
+          },
+          "evidence_turns": 13,
+          "required_events": 5,
+          "answer_tokens": 126.71
+        },
+        "shift_temporal": {
+          "questions": 300,
+          "difficulty": {
+            "medium": 300
+          },
+          "evidence_turns": 2,
+          "required_events": 1,
+          "answer_tokens": 18.31
+        },
+        "single_hop_fact": {
+          "questions": 300,
+          "difficulty": {
+            "easy": 300
+          },
+          "evidence_turns": 3,
+          "required_events": 1,
+          "answer_tokens": 24.95
+        },
+        "state_tracking": {
+          "questions": 300,
+          "difficulty": {
+            "easy": 300
+          },
+          "evidence_turns": 3,
+          "required_events": 1,
+          "answer_tokens": 24
+        },
+        "superseded_fact": {
+          "questions": 300,
+          "difficulty": {
+            "medium": 300
+          },
+          "evidence_turns": 13,
+          "required_events": 5,
+          "answer_tokens": 63.1
+        },
+        "temporal_order": {
+          "questions": 300,
+          "difficulty": {
+            "medium": 300
+          },
+          "evidence_turns": 13,
+          "required_events": 5,
+          "answer_tokens": 60.1
+        },
+        "tool_evidence_recall": {
+          "questions": 300,
+          "difficulty": {
+            "medium": 300
+          },
+          "evidence_turns": 1,
+          "required_events": 1,
+          "answer_tokens": 48.15
+        },
+        "unanswerable": {
+          "questions": 300,
+          "difficulty": {
+            "hard": 300
+          },
+          "evidence_turns": 0,
+          "required_events": 0,
+          "answer_tokens": 16
+        },
+        "working_memory_snapshot": {
+          "questions": 300,
+          "difficulty": {
+            "hard": 300
+          },
+          "evidence_turns": 15,
+          "required_events": 5,
+          "answer_tokens": 131
+        }
+      }
+    }
+  },
+  "long": {
+    "en/dev/K001": {
+      "K": 1,
+      "histories": 10,
+      "questions": 390,
+      "sessions_per_history": 5,
+      "turns_per_history": 57.3,
+      "tokens_mean": 3937.4,
+      "tokens_min": 3313,
+      "tokens_max": 4339,
+      "low_density_token_share": 0.6546299233976441,
+      "same_domain_distractors": 0,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 3191.686111111111,
+      "evidence_depth_last_mean": 802.2055555555555
+    },
+    "en/dev/K010": {
+      "K": 10,
+      "histories": 1,
+      "questions": 390,
+      "sessions_per_history": 50,
+      "turns_per_history": 573,
+      "tokens_mean": 39374,
+      "tokens_min": 39374,
+      "tokens_max": 39374,
+      "low_density_token_share": 0.6559150708589424,
+      "same_domain_distractors": 1.6,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 21178.352777777778,
+      "evidence_depth_last_mean": 18428.13888888889
+    },
+    "en/dev30/K030": {
+      "K": 30,
+      "histories": 1,
+      "questions": 1170,
+      "sessions_per_history": 150,
+      "turns_per_history": 1713,
+      "tokens_mean": 118147,
+      "tokens_min": 118147,
+      "tokens_max": 118147,
+      "low_density_token_share": 0.6576552938288742,
+      "same_domain_distractors": 6.533333333333333,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 63158.333333333336,
+      "evidence_depth_last_mean": 56930.40185185185
+    },
+    "en/eval/K001": {
+      "K": 1,
+      "histories": 90,
+      "questions": 3510,
+      "sessions_per_history": 5,
+      "turns_per_history": 56.44444444444444,
+      "tokens_mean": 3936.3777777777777,
+      "tokens_min": 3001,
+      "tokens_max": 4916,
+      "low_density_token_share": 0.6563859808237722,
+      "same_domain_distractors": 0,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 3173.939197530864,
+      "evidence_depth_last_mean": 774.4996913580247
+    },
+    "en/eval/K010": {
+      "K": 10,
+      "histories": 9,
+      "questions": 3510,
+      "sessions_per_history": 50,
+      "turns_per_history": 564.4444444444445,
+      "tokens_mean": 39363.77777777778,
+      "tokens_min": 37853,
+      "tokens_max": 41544,
+      "low_density_token_share": 0.6589697351206315,
+      "same_domain_distractors": 1.6,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 21504.460493827162,
+      "evidence_depth_last_mean": 17756.80802469136
+    },
+    "en/eval/K030": {
+      "K": 30,
+      "histories": 3,
+      "questions": 3510,
+      "sessions_per_history": 150,
+      "turns_per_history": 1693.3333333333333,
+      "tokens_mean": 118091.33333333333,
+      "tokens_min": 116991,
+      "tokens_max": 119299,
+      "low_density_token_share": 0.6591825190246994,
+      "same_domain_distractors": 6.533333333333333,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 62233.84598765432,
+      "evidence_depth_last_mean": 55414.982407407406
+    },
+    "en/eval/K090": {
+      "K": 90,
+      "histories": 1,
+      "questions": 3510,
+      "sessions_per_history": 450,
+      "turns_per_history": 5080,
+      "tokens_mean": 354274,
+      "tokens_min": 354274,
+      "tokens_max": 354274,
+      "low_density_token_share": 0.6591988122187911,
+      "same_domain_distractors": 21.511111111111113,
+      "max_concurrent_sessions": 2,
+      "evidence_depth_first_mean": 184715.025,
+      "evidence_depth_last_mean": 169058.04567901234
+    },
+    "en/test90/K030": {
+      "K": 30,
+      "histories": 3,
+      "questions": 3510,
+      "sessions_per_history": 150,
+      "turns_per_history": 1684.6666666666667,
+      "tokens_mean": 116353.33333333333,
+      "tokens_min": 112114,
+      "tokens_max": 119264,
+      "low_density_token_share": 0.6538580296450504,
+      "same_domain_distractors": 6.533333333333333,
+      "max_concurrent_sessions": 2,
+      "evidence_depth_first_mean": 62052.11759259259,
+      "evidence_depth_last_mean": 55243.72901234568
+    },
+    "zh/dev/K001": {
+      "K": 1,
+      "histories": 10,
+      "questions": 390,
+      "sessions_per_history": 5,
+      "turns_per_history": 57.4,
+      "tokens_mean": 4160,
+      "tokens_min": 3441,
+      "tokens_max": 4568,
+      "low_density_token_share": 0.670376289400487,
+      "same_domain_distractors": 0,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 3355.863888888889,
+      "evidence_depth_last_mean": 803.9222222222222
+    },
+    "zh/dev/K010": {
+      "K": 10,
+      "histories": 1,
+      "questions": 390,
+      "sessions_per_history": 50,
+      "turns_per_history": 574,
+      "tokens_mean": 41600,
+      "tokens_min": 41600,
+      "tokens_max": 41600,
+      "low_density_token_share": 0.6720673076923077,
+      "same_domain_distractors": 1.6,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 22265.616666666665,
+      "evidence_depth_last_mean": 19398.908333333333
+    },
+    "zh/dev30/K030": {
+      "K": 30,
+      "histories": 1,
+      "questions": 1170,
+      "sessions_per_history": 150,
+      "turns_per_history": 1652,
+      "tokens_mean": 116041,
+      "tokens_min": 116041,
+      "tokens_max": 116041,
+      "low_density_token_share": 0.64931360467421,
+      "same_domain_distractors": 6.533333333333333,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 61492.98333333333,
+      "evidence_depth_last_mean": 55661.53240740741
+    },
+    "zh/eval/K001": {
+      "K": 1,
+      "histories": 90,
+      "questions": 3510,
+      "sessions_per_history": 5,
+      "turns_per_history": 56.46666666666667,
+      "tokens_mean": 3922.3888888888887,
+      "tokens_min": 2953,
+      "tokens_max": 4650,
+      "low_density_token_share": 0.652528237551238,
+      "same_domain_distractors": 0,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 3164.99012345679,
+      "evidence_depth_last_mean": 782.4962962962964
+    },
+    "zh/eval/K010": {
+      "K": 10,
+      "histories": 9,
+      "questions": 3510,
+      "sessions_per_history": 50,
+      "turns_per_history": 564.6666666666666,
+      "tokens_mean": 39223.88888888889,
+      "tokens_min": 37469,
+      "tokens_max": 42726,
+      "low_density_token_share": 0.6550248229184502,
+      "same_domain_distractors": 1.6,
+      "max_concurrent_sessions": 1,
+      "evidence_depth_first_mean": 21709.889814814815,
+      "evidence_depth_last_mean": 17919.527469135803
+    },
+    "zh/eval/K030": {
+      "K": 30,
+      "histories": 3,
+      "questions": 3510,
+      "sessions_per_history": 150,
+      "turns_per_history": 1694,
+      "tokens_mean": 117671.66666666667,
+      "tokens_min": 115763,
+      "tokens_max": 120139,
+      "low_density_token_share": 0.6553319614211816,
+      "same_domain_distractors": 6.533333333333333,
+      "max_concurrent_sessions": 2,
+      "evidence_depth_first_mean": 62790.13148148148,
+      "evidence_depth_last_mean": 55806.39506172839
+    },
+    "zh/eval/K090": {
+      "K": 90,
+      "histories": 1,
+      "questions": 3510,
+      "sessions_per_history": 450,
+      "turns_per_history": 5082,
+      "tokens_mean": 353015,
+      "tokens_min": 353015,
+      "tokens_max": 353015,
+      "low_density_token_share": 0.6554197413707633,
+      "same_domain_distractors": 21.511111111111113,
+      "max_concurrent_sessions": 2,
+      "evidence_depth_first_mean": 185547.3962962963,
+      "evidence_depth_last_mean": 170047.27839506173
+    },
+    "zh/test90/K030": {
+      "K": 30,
+      "histories": 3,
+      "questions": 3510,
+      "sessions_per_history": 150,
+      "turns_per_history": 1680,
+      "tokens_mean": 116728.66666666667,
+      "tokens_min": 114092,
+      "tokens_max": 120799,
+      "low_density_token_share": 0.6525299937127028,
+      "same_domain_distractors": 6.533333333333333,
+      "max_concurrent_sessions": 2,
+      "evidence_depth_first_mean": 61338.8537037037,
+      "evidence_depth_last_mean": 54506.762037037035
+    }
+  }
+}
